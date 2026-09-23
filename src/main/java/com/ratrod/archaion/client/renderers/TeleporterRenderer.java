@@ -15,7 +15,6 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
 import java.text.DecimalFormat;
@@ -63,9 +62,4 @@ public final class TeleporterRenderer implements BlockEntityRenderer<TeleporterB
     @Override public boolean shouldRenderOffScreen(TeleporterBlockEntity entity) { return true; }
     @Override public int getViewDistance() { return 128; }
     @Override public boolean shouldRender(TeleporterBlockEntity entity, Vec3 cameraPos) { return true; }
-    @Override public AABB getRenderBoundingBox(TeleporterBlockEntity entity) {
-        var p = entity.getBlockPos();
-        return new AABB(p.getX() - 1.0D, p.getY(), p.getZ() - 1.0D,
-                p.getX() + 2.0D, p.getY() + entity.maxHeight + 1.0D, p.getZ() + 2.0D);
-    }
 }

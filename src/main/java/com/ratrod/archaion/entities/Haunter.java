@@ -89,7 +89,7 @@ public class Haunter extends Monster implements Archaic, PowerableMob {
     }
 
     @Override
-    protected int getExperienceReward() {
+    public int getExperienceReward() {
         return archaicXpReward(super.getExperienceReward());
     }
 

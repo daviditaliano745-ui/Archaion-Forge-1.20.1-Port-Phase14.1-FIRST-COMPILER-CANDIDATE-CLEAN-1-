@@ -12,7 +12,6 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.util.Mth;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
@@ -70,9 +69,4 @@ public final class HologramRenderer implements BlockEntityRenderer<HologramBlock
     @Override public boolean shouldRenderOffScreen(HologramBlockEntity entity) { return true; }
     @Override public int getViewDistance() { return 128; }
     @Override public boolean shouldRender(HologramBlockEntity entity, Vec3 cameraPos) { return true; }
-    @Override public AABB getRenderBoundingBox(HologramBlockEntity entity) {
-        var p = entity.getBlockPos();
-        return new AABB(p.getX() - 1.0D, p.getY(), p.getZ() - 1.0D,
-                p.getX() + 2.0D, p.getY() + 4.0D, p.getZ() + 2.0D);
-    }
 }

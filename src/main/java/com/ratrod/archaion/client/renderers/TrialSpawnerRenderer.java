@@ -7,10 +7,8 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRenderDispatcher;
-import net.minecraft.core.BlockPos;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.phys.AABB;
 
 /** 1.20.1 equivalent of Archaion's 1.21 TrialSpawner display-entity renderer. */
 public final class TrialSpawnerRenderer implements BlockEntityRenderer<ACTrialSpawnerBlockEntity> {
@@ -39,12 +37,5 @@ public final class TrialSpawnerRenderer implements BlockEntityRenderer<ACTrialSp
         poseStack.scale(scale, scale, scale);
         entityRenderer.render(entity, 0.0D, 0.0D, 0.0D, 0.0F, partialTick, poseStack, buffer, packedLight);
         poseStack.popPose();
-    }
-
-    @Override
-    public AABB getRenderBoundingBox(ACTrialSpawnerBlockEntity blockEntity) {
-        BlockPos pos = blockEntity.getBlockPos();
-        return new AABB(pos.getX() - 1.0D, pos.getY() - 1.0D, pos.getZ() - 1.0D,
-                pos.getX() + 2.0D, pos.getY() + 2.0D, pos.getZ() + 2.0D);
     }
 }
