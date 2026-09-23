@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "archaion:block/reinforced_deepslate_tile_slab"
+    },
+    "type=double": {
+      "model": "archaion:block/reinforced_deepslate_tiles"
+    },
+    "type=top": {
+      "model": "archaion:block/reinforced_deepslate_tile_slab_top"
+    }
+  }
+}

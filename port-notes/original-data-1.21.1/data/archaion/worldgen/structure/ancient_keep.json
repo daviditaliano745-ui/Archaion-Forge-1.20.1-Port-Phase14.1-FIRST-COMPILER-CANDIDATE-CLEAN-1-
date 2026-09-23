@@ -1,0 +1,57 @@
+{
+  "type": "archaion:ancient_keep",
+  "biomes": "#minecraft:has_structure/trial_chambers",
+  "step": "surface_structures",
+  "dimension_padding": 10,
+  "terrain_adaptation": "encapsulate",
+  "spawn_overrides": {
+    "ambient": {
+      "bounding_box": "piece",
+      "spawns": []
+    },
+    "axolotls": {
+      "bounding_box": "piece",
+      "spawns": []
+    },
+    "creature": {
+      "bounding_box": "piece",
+      "spawns": []
+    },
+    "misc": {
+      "bounding_box": "piece",
+      "spawns": []
+    },
+    "monster": {
+      "bounding_box": "piece",
+      "spawns": []
+    },
+    "underground_water_creature": {
+      "bounding_box": "piece",
+      "spawns": []
+    },
+    "water_ambient": {
+      "bounding_box": "piece",
+      "spawns": []
+    },
+    "water_creature": {
+      "bounding_box": "piece",
+      "spawns": []
+    }
+  },
+  "start_pool": "archaion:ancient_keep/main_path",
+  "size": 15,
+  "start_jigsaw_name": "archaion:arena_mainhall",
+  "start_height": {
+    "type": "minecraft:uniform",
+    "max_inclusive": {
+      "absolute": -110
+    },
+    "min_inclusive": {
+      "absolute": -115
+    }
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE",
+  "max_distance_from_center": 110,
+  "use_expansion_hack": false,
+  "liquid_settings": "ignore_waterlogging"
+}

@@ -1,0 +1,298 @@
+Compiled from "EchosGraceItem.java"
+public class com.ratrod.archaion.item.EchosGraceItem extends net.minecraft.world.item.ProjectileWeaponItem {
+  public static final int MAX_DRAW_DURATION;
+
+  public static final int DEFAULT_RANGE;
+
+  public com.ratrod.archaion.item.EchosGraceItem(net.minecraft.world.item.Item$Properties);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #1                  // Method net/minecraft/world/item/ProjectileWeaponItem."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+       5: return
+
+  public void releaseUsing(net.minecraft.world.item.ItemStack, net.minecraft.world.level.Level, net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_3
+       1: instanceof    #7                  // class net/minecraft/world/entity/player/Player
+       4: ifeq          238
+       7: aload_3
+       8: checkcast     #7                  // class net/minecraft/world/entity/player/Player
+      11: astore        5
+      13: aload_0
+      14: aload_1
+      15: aload_3
+      16: invokevirtual #9                  // Method getUseDuration:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)I
+      19: iload         4
+      21: isub
+      22: istore        6
+      24: iload         6
+      26: ifge          30
+      29: return
+      30: iload         6
+      32: aload_1
+      33: aload_3
+      34: invokestatic  #15                 // Method getPowerForTime:(ILnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)F
+      37: fstore        7
+      39: fload         7
+      41: f2d
+      42: ldc2_w        #19                 // double 0.1d
+      45: dcmpg
+      46: ifge          50
+      49: return
+      50: new           #21                 // class java/util/ArrayList
+      53: dup
+      54: invokespecial #23                 // Method java/util/ArrayList."<init>":()V
+      57: astore        8
+      59: iconst_1
+      60: istore        9
+      62: aload_2
+      63: instanceof    #26                 // class net/minecraft/server/level/ServerLevel
+      66: ifeq          86
+      69: aload_2
+      70: checkcast     #26                 // class net/minecraft/server/level/ServerLevel
+      73: astore        10
+      75: aload         10
+      77: aload_1
+      78: aload         5
+      80: iconst_1
+      81: invokestatic  #28                 // Method net/minecraft/world/item/enchantment/EnchantmentHelper.processProjectileCount:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/Entity;I)I
+      84: istore        9
+      86: getstatic     #34                 // Field com/ratrod/archaion/registry/ACItems.ECHO_CHARGE:Lnet/neoforged/neoforge/registries/DeferredItem;
+      89: invokevirtual #40                 // Method net/neoforged/neoforge/registries/DeferredItem.get:()Ljava/lang/Object;
+      92: checkcast     #46                 // class net/minecraft/world/item/Item
+      95: invokevirtual #48                 // Method net/minecraft/world/item/Item.getDefaultInstance:()Lnet/minecraft/world/item/ItemStack;
+      98: astore        10
+     100: iconst_0
+     101: istore        11
+     103: iload         11
+     105: iload         9
+     107: if_icmpge     129
+     110: aload         8
+     112: aload         10
+     114: invokevirtual #52                 // Method net/minecraft/world/item/ItemStack.copy:()Lnet/minecraft/world/item/ItemStack;
+     117: invokeinterface #57,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     122: pop
+     123: iinc          11, 1
+     126: goto          103
+     129: aload_2
+     130: instanceof    #26                 // class net/minecraft/server/level/ServerLevel
+     133: ifeq          176
+     136: aload_2
+     137: checkcast     #26                 // class net/minecraft/server/level/ServerLevel
+     140: astore        11
+     142: aload_0
+     143: aload         11
+     145: aload         5
+     147: aload         5
+     149: invokevirtual #63                 // Method net/minecraft/world/entity/player/Player.getUsedItemHand:()Lnet/minecraft/world/InteractionHand;
+     152: aload_1
+     153: aload         8
+     155: fload         7
+     157: fconst_2
+     158: fmul
+     159: fconst_1
+     160: fload         7
+     162: fconst_1
+     163: fcmpl
+     164: ifne          171
+     167: iconst_1
+     168: goto          172
+     171: iconst_0
+     172: aconst_null
+     173: invokevirtual #67                 // Method shoot:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;Ljava/util/List;FFZLnet/minecraft/world/entity/LivingEntity;)V
+     176: aload_2
+     177: aconst_null
+     178: aload         5
+     180: invokevirtual #71                 // Method net/minecraft/world/entity/player/Player.getX:()D
+     183: aload         5
+     185: invokevirtual #75                 // Method net/minecraft/world/entity/player/Player.getY:()D
+     188: aload         5
+     190: invokevirtual #78                 // Method net/minecraft/world/entity/player/Player.getZ:()D
+     193: getstatic     #81                 // Field com/ratrod/archaion/registry/ACSounds.LOD_SHOOT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     196: getstatic     #87                 // Field net/minecraft/sounds/SoundSource.PLAYERS:Lnet/minecraft/sounds/SoundSource;
+     199: fconst_1
+     200: fconst_1
+     201: aload_2
+     202: invokevirtual #93                 // Method net/minecraft/world/level/Level.getRandom:()Lnet/minecraft/util/RandomSource;
+     205: invokeinterface #99,  1           // InterfaceMethod net/minecraft/util/RandomSource.nextFloat:()F
+     210: ldc           #105                // float 0.4f
+     212: fmul
+     213: ldc           #106                // float 1.2f
+     215: fadd
+     216: fdiv
+     217: fload         7
+     219: ldc           #107                // float 0.5f
+     221: fmul
+     222: fadd
+     223: invokevirtual #108                // Method net/minecraft/world/level/Level.playSound:(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/core/Holder;Lnet/minecraft/sounds/SoundSource;FF)V
+     226: aload         5
+     228: getstatic     #112                // Field net/minecraft/stats/Stats.ITEM_USED:Lnet/minecraft/stats/StatType;
+     231: aload_0
+     232: invokevirtual #118                // Method net/minecraft/stats/StatType.get:(Ljava/lang/Object;)Lnet/minecraft/stats/Stat;
+     235: invokevirtual #123                // Method net/minecraft/world/entity/player/Player.awardStat:(Lnet/minecraft/stats/Stat;)V
+     238: return
+
+  protected void shootProjectile(net.minecraft.world.entity.LivingEntity, net.minecraft.world.entity.projectile.Projectile, int, float, float, float, net.minecraft.world.entity.LivingEntity);
+    Code:
+       0: aload_2
+       1: aload_1
+       2: aload_1
+       3: invokevirtual #127                // Method net/minecraft/world/entity/LivingEntity.getXRot:()F
+       6: aload_1
+       7: invokevirtual #132                // Method net/minecraft/world/entity/LivingEntity.getYRot:()F
+      10: fload         6
+      12: fadd
+      13: fconst_0
+      14: fload         4
+      16: fload         5
+      18: invokevirtual #135                // Method net/minecraft/world/entity/projectile/Projectile.shootFromRotation:(Lnet/minecraft/world/entity/Entity;FFFFF)V
+      21: return
+
+  public static float getPowerForTime(int, net.minecraft.world.item.ItemStack, net.minecraft.world.entity.LivingEntity);
+    Code:
+       0: aload_1
+       1: aload_2
+       2: fconst_1
+       3: invokestatic  #141                // Method net/minecraft/world/item/enchantment/EnchantmentHelper.modifyCrossbowChargingTime:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;F)F
+       6: ldc           #145                // float 20.0f
+       8: fmul
+       9: fstore_3
+      10: iload_0
+      11: i2f
+      12: fload_3
+      13: fdiv
+      14: fstore        4
+      16: fload         4
+      18: fload         4
+      20: fmul
+      21: fload         4
+      23: fconst_2
+      24: fmul
+      25: fadd
+      26: ldc           #146                // float 3.0f
+      28: fdiv
+      29: fstore        4
+      31: fload         4
+      33: fconst_1
+      34: fcmpl
+      35: ifle          41
+      38: fconst_1
+      39: fstore        4
+      41: fload         4
+      43: freturn
+
+  public int getUseDuration(net.minecraft.world.item.ItemStack, net.minecraft.world.entity.LivingEntity);
+    Code:
+       0: ldc           #147                // int 72000
+       2: ireturn
+
+  public net.minecraft.world.item.UseAnim getUseAnimation(net.minecraft.world.item.ItemStack);
+    Code:
+       0: getstatic     #148                // Field net/minecraft/world/item/UseAnim.BOW:Lnet/minecraft/world/item/UseAnim;
+       3: areturn
+
+  public net.minecraft.world.InteractionResultHolder<net.minecraft.world.item.ItemStack> use(net.minecraft.world.level.Level, net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand);
+    Code:
+       0: aload_2
+       1: aload_3
+       2: invokevirtual #154                // Method net/minecraft/world/entity/player/Player.startUsingItem:(Lnet/minecraft/world/InteractionHand;)V
+       5: aload_2
+       6: aload_3
+       7: invokevirtual #158                // Method net/minecraft/world/entity/player/Player.getItemInHand:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+      10: invokestatic  #162                // Method net/minecraft/world/InteractionResultHolder.consume:(Ljava/lang/Object;)Lnet/minecraft/world/InteractionResultHolder;
+      13: areturn
+
+  public int getEnchantmentValue();
+    Code:
+       0: bipush        15
+       2: ireturn
+
+  public boolean isValidRepairItem(net.minecraft.world.item.ItemStack, net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_2
+       1: getstatic     #168                // Field net/minecraft/world/item/Items.ECHO_SHARD:Lnet/minecraft/world/item/Item;
+       4: invokevirtual #174                // Method net/minecraft/world/item/ItemStack.is:(Lnet/minecraft/world/item/Item;)Z
+       7: ireturn
+
+  public java.util.function.Predicate<net.minecraft.world.item.ItemStack> getAllSupportedProjectiles();
+    Code:
+       0: invokedynamic #178,  0            // InvokeDynamic #0:test:()Ljava/util/function/Predicate;
+       5: areturn
+
+  public int getDefaultProjectileRange();
+    Code:
+       0: bipush        15
+       2: ireturn
+
+  protected net.minecraft.world.entity.projectile.Projectile createProjectile(net.minecraft.world.level.Level, net.minecraft.world.entity.LivingEntity, net.minecraft.world.item.ItemStack, net.minecraft.world.item.ItemStack, boolean);
+    Code:
+       0: new           #182                // class com/ratrod/archaion/entities/projectile/EchoStarProjectile
+       3: dup
+       4: aload_1
+       5: aload_2
+       6: aload         4
+       8: invokespecial #184                // Method com/ratrod/archaion/entities/projectile/EchoStarProjectile."<init>":(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V
+      11: astore        6
+      13: aload_1
+      14: invokevirtual #187                // Method net/minecraft/world/level/Level.registryAccess:()Lnet/minecraft/core/RegistryAccess;
+      17: getstatic     #191                // Field net/minecraft/core/registries/Registries.ENCHANTMENT:Lnet/minecraft/resources/ResourceKey;
+      20: invokeinterface #197,  2          // InterfaceMethod net/minecraft/core/RegistryAccess.lookupOrThrow:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/HolderLookup$RegistryLookup;
+      25: getstatic     #203                // Field net/minecraft/world/item/enchantment/Enchantments.POWER:Lnet/minecraft/resources/ResourceKey;
+      28: invokeinterface #208,  2          // InterfaceMethod net/minecraft/core/HolderLookup$RegistryLookup.getOrThrow:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;
+      33: astore        7
+      35: aload_3
+      36: aload         7
+      38: invokevirtual #214                // Method net/minecraft/world/item/ItemStack.getEnchantmentLevel:(Lnet/minecraft/core/Holder;)I
+      41: istore        8
+      43: aload         6
+      45: ldc           #218                // float 12.0f
+      47: invokevirtual #219                // Method com/ratrod/archaion/entities/projectile/EchoStarProjectile.setBaseDamage:(F)V
+      50: aload         6
+      52: iload         8
+      54: i2f
+      55: invokevirtual #223                // Method com/ratrod/archaion/entities/projectile/EchoStarProjectile.setPowerBonus:(F)V
+      58: aload         6
+      60: areturn
+
+  public net.minecraft.world.item.ItemStack getDefaultCreativeAmmo(net.minecraft.world.entity.player.Player, net.minecraft.world.item.ItemStack);
+    Code:
+       0: getstatic     #34                 // Field com/ratrod/archaion/registry/ACItems.ECHO_CHARGE:Lnet/neoforged/neoforge/registries/DeferredItem;
+       3: invokevirtual #40                 // Method net/neoforged/neoforge/registries/DeferredItem.get:()Ljava/lang/Object;
+       6: checkcast     #46                 // class net/minecraft/world/item/Item
+       9: invokevirtual #48                 // Method net/minecraft/world/item/Item.getDefaultInstance:()Lnet/minecraft/world/item/ItemStack;
+      12: areturn
+
+  public void appendHoverText(net.minecraft.world.item.ItemStack, net.minecraft.world.item.Item$TooltipContext, java.util.List<net.minecraft.network.chat.Component>, net.minecraft.world.item.TooltipFlag);
+    Code:
+       0: aload_3
+       1: ldc           #226                // String item.archaion.echos_grace.desc
+       3: iconst_1
+       4: anewarray     #228                // class java/lang/Object
+       7: dup
+       8: iconst_0
+       9: ldc           #230                // String item.archaion.echos_grace.keyword.echo_charges
+      11: invokestatic  #232                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      14: getstatic     #238                // Field net/minecraft/ChatFormatting.AQUA:Lnet/minecraft/ChatFormatting;
+      17: invokevirtual #244                // Method net/minecraft/network/chat/MutableComponent.withStyle:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      20: aastore
+      21: invokestatic  #250                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      24: getstatic     #253                // Field net/minecraft/ChatFormatting.DARK_GRAY:Lnet/minecraft/ChatFormatting;
+      27: invokevirtual #244                // Method net/minecraft/network/chat/MutableComponent.withStyle:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      30: invokeinterface #57,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      35: pop
+      36: aload_3
+      37: getstatic     #256                // Field net/minecraft/network/chat/CommonComponents.EMPTY:Lnet/minecraft/network/chat/Component;
+      40: invokeinterface #57,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      45: pop
+      46: return
+
+  private static boolean lambda$getAllSupportedProjectiles$0(net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_0
+       1: getstatic     #34                 // Field com/ratrod/archaion/registry/ACItems.ECHO_CHARGE:Lnet/neoforged/neoforge/registries/DeferredItem;
+       4: invokevirtual #40                 // Method net/neoforged/neoforge/registries/DeferredItem.get:()Ljava/lang/Object;
+       7: checkcast     #46                 // class net/minecraft/world/item/Item
+      10: invokevirtual #174                // Method net/minecraft/world/item/ItemStack.is:(Lnet/minecraft/world/item/Item;)Z
+      13: ireturn
+}

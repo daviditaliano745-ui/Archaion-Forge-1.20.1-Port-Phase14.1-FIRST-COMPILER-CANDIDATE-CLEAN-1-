@@ -1,0 +1,37 @@
+{
+  "parent": "archaion:kill_last_of_deepslate",
+  "criteria": {
+    "has_echo_mace": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "archaion:echo_mace"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.craft_echo_mace.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "item": "archaion:echo_mace"
+    },
+    "title": {
+      "translate": "advancements.craft_echo_mace.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_echo_mace"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  }
+}

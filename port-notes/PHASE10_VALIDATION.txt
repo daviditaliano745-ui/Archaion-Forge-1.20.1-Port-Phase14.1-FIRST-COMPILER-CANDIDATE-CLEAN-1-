@@ -1,0 +1,15 @@
+Phase 10 static integration validation
+======================================
+Active Java files: 79
+JSON / pack metadata parsed: 158
+JSON parse errors: 0
+Converted Ancient Keep NBT templates: 20
+NBT read errors: 0
+Obvious NeoForge/1.21 active Java/resource symbol scan: clean
+Active Sponge/Mixin configuration: none
+No-classpath javac syntax-level diagnostics: 0
+AAA Particles local dependency: 2.2.3 / aaa_particles / requires Forge 47.2.30+
+
+Full ForgeGradle compile: NOT RUN / NOT CLAIMED.
+Reason: no local ForgeGradle/Minecraft dependency graph or Gradle wrapper is present
+in this execution environment, and outbound dependency fetching is unavailable.

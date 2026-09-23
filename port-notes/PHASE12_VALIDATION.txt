@@ -1,0 +1,26 @@
+Phase 12 cumulative static validation
+=====================================
+Active Java files: 93
+JSON / pack metadata parsed: 160
+JSON parse errors: 0
+Converted Ancient Keep NBT templates: 20
+NBT structural read errors: 0
+Local Archaion resource references checked: 482
+Missing local resource targets: 0
+Active NeoForge references: 0
+Active Sponge/Mixin configuration/references: 0
+No-classpath Java 17 syntax-level diagnostics: 0
+
+Phase 12 presentation work:
+- Authored Brave / Deepslate Sentinel / Grimoray / Haunter / Last of Deepslate geometry restored.
+- Slated and Wight moved off fallback geometry onto native zombie/skeleton render paths.
+- Brave / Haunter / Last of Deepslate charged shells use separate 2.0-deformation model layers.
+- Trial Spawner rotating display entity renderer restored on the custom 1.20.1 block entity.
+- Phase 11 thrown Echo Mace / LOD falling block / intended invisible helper renderer parity retained.
+
+Known deliberate presentation deferral:
+- Exact original custom ActionManager attack-keyframe playback is not reintroduced before first launch.
+- Ancient Keep ambient fog and custom boss-bar skin remain post-launch polish.
+
+Full ForgeGradle compile: NOT RUN / NOT CLAIMED.
+Test JAR: NOT YET PRODUCED.

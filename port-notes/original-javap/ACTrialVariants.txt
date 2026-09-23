@@ -1,0 +1,121 @@
+Compiled from "ACTrialVariants.java"
+public final class com.ratrod.archaion.registry.ACTrialVariants {
+  public static final com.ratrod.archaion.api.trial.TrialSpawnerVariant DEEPSLATE_SPAWNER;
+    descriptor: Lcom/ratrod/archaion/api/trial/TrialSpawnerVariant;
+
+  public static final com.ratrod.archaion.api.trial.TrialVaultVariant DEEPSLATE_VAULT;
+    descriptor: Lcom/ratrod/archaion/api/trial/TrialVaultVariant;
+
+  private static net.minecraft.world.level.block.entity.trialspawner.TrialSpawnerConfig deepslateSpawnerConfig();
+    descriptor: ()Lnet/minecraft/world/level/block/entity/trialspawner/TrialSpawnerConfig;
+    Code:
+       0: new           #1                  // class net/minecraft/world/level/block/entity/trialspawner/TrialSpawnerConfig
+       3: dup
+       4: iconst_4
+       5: ldc           #3                  // float 6.0f
+       7: fconst_2
+       8: fconst_1
+       9: ldc           #4                  // float 0.5f
+      11: bipush        100
+      13: invokestatic  #5                  // Method net/minecraft/util/random/SimpleWeightedRandomList.empty:()Lnet/minecraft/util/random/SimpleWeightedRandomList;
+      16: invokestatic  #11                 // Method net/minecraft/util/random/SimpleWeightedRandomList.builder:()Lnet/minecraft/util/random/SimpleWeightedRandomList$Builder;
+      19: getstatic     #15                 // Field com/ratrod/archaion/datagen/loot/ACLootTables.DEEPSLATE_SPAWNER_MISC:Lnet/minecraft/resources/ResourceKey;
+      22: iconst_3
+      23: invokevirtual #21                 // Method net/minecraft/util/random/SimpleWeightedRandomList$Builder.add:(Ljava/lang/Object;I)Lnet/minecraft/util/random/SimpleWeightedRandomList$Builder;
+      26: getstatic     #27                 // Field com/ratrod/archaion/datagen/loot/ACLootTables.DEEPSLATE_SPAWNER_KEY:Lnet/minecraft/resources/ResourceKey;
+      29: iconst_2
+      30: invokevirtual #21                 // Method net/minecraft/util/random/SimpleWeightedRandomList$Builder.add:(Ljava/lang/Object;I)Lnet/minecraft/util/random/SimpleWeightedRandomList$Builder;
+      33: invokevirtual #30                 // Method net/minecraft/util/random/SimpleWeightedRandomList$Builder.build:()Lnet/minecraft/util/random/SimpleWeightedRandomList;
+      36: getstatic     #33                 // Field com/ratrod/archaion/datagen/loot/ACLootTables.DEEPSLATE_SPAWNER_THROWABLES:Lnet/minecraft/resources/ResourceKey;
+      39: invokespecial #36                 // Method net/minecraft/world/level/block/entity/trialspawner/TrialSpawnerConfig."<init>":(IFFFFILnet/minecraft/util/random/SimpleWeightedRandomList;Lnet/minecraft/util/random/SimpleWeightedRandomList;Lnet/minecraft/resources/ResourceKey;)V
+      42: areturn
+
+  private com.ratrod.archaion.registry.ACTrialVariants();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #40                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void initialize();
+    descriptor: ()V
+    Code:
+       0: return
+
+  public static java.util.List<com.ratrod.archaion.api.trial.TrialSpawnerVariant> spawners();
+    descriptor: ()Ljava/util/List;
+    Code:
+       0: invokestatic  #45                 // Method com/ratrod/archaion/api/trial/ACTrialRegistry.spawners:()Ljava/util/List;
+       3: areturn
+
+  public static java.util.List<com.ratrod.archaion.api.trial.TrialVaultVariant> vaults();
+    descriptor: ()Ljava/util/List;
+    Code:
+       0: invokestatic  #51                 // Method com/ratrod/archaion/api/trial/ACTrialRegistry.vaults:()Ljava/util/List;
+       3: areturn
+
+  public static boolean isVaultBlock(net.minecraft.world.level.block.Block);
+    descriptor: (Lnet/minecraft/world/level/block/Block;)Z
+    Code:
+       0: aload_0
+       1: invokestatic  #54                 // Method com/ratrod/archaion/api/trial/ACTrialRegistry.isVaultBlock:(Lnet/minecraft/world/level/block/Block;)Z
+       4: ireturn
+
+  private static net.minecraft.world.level.block.state.BlockBehaviour$Properties lambda$static$2(net.minecraft.world.level.block.state.BlockBehaviour$Properties);
+    descriptor: (Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+    Code:
+       0: aload_0
+       1: getstatic     #58                 // Field net/minecraft/world/level/material/MapColor.DEEPSLATE:Lnet/minecraft/world/level/material/MapColor;
+       4: invokevirtual #64                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #70                 // Field net/minecraft/world/level/block/SoundType.VAULT:Lnet/minecraft/world/level/block/SoundType;
+      10: invokevirtual #76                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: ldc           #80                 // float -1.0f
+      15: ldc           #81                 // float 3600000.0f
+      17: invokevirtual #82                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      20: invokevirtual #86                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.noOcclusion:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      23: areturn
+
+  private static net.minecraft.world.level.block.state.BlockBehaviour$Properties lambda$static$1(net.minecraft.world.level.block.state.BlockBehaviour$Properties);
+    descriptor: (Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+    Code:
+       0: aload_0
+       1: getstatic     #58                 // Field net/minecraft/world/level/material/MapColor.DEEPSLATE:Lnet/minecraft/world/level/material/MapColor;
+       4: invokevirtual #64                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #90                 // Field net/minecraft/world/level/block/SoundType.TRIAL_SPAWNER:Lnet/minecraft/world/level/block/SoundType;
+      10: invokevirtual #76                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: ldc           #93                 // float 50.0f
+      15: ldc           #94                 // float 1200.0f
+      17: invokevirtual #82                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      20: invokevirtual #86                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.noOcclusion:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      23: invokedynamic #95,  0             // InvokeDynamic #0:applyAsInt:()Ljava/util/function/ToIntFunction;
+      28: invokevirtual #99                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.lightLevel:(Ljava/util/function/ToIntFunction;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      31: areturn
+
+  private static int lambda$static$0(net.minecraft.world.level.block.state.BlockState);
+    descriptor: (Lnet/minecraft/world/level/block/state/BlockState;)I
+    Code:
+       0: aload_0
+       1: getstatic     #103                // Field com/ratrod/archaion/api/trial/ACTrialSpawnerBlock.STATE:Lnet/minecraft/world/level/block/state/properties/EnumProperty;
+       4: invokevirtual #109                // Method net/minecraft/world/level/block/state/BlockState.getValue:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+       7: checkcast     #115                // class net/minecraft/world/level/block/entity/trialspawner/TrialSpawnerState
+      10: invokevirtual #117                // Method net/minecraft/world/level/block/entity/trialspawner/TrialSpawnerState.lightLevel:()I
+      13: ireturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: ldc           #120                // String deepslate_spawner
+       2: invokedynamic #122,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+       7: invokestatic  #126                // Method deepslateSpawnerConfig:()Lnet/minecraft/world/level/block/entity/trialspawner/TrialSpawnerConfig;
+      10: invokestatic  #132                // Method com/ratrod/archaion/api/trial/ACTrialRegistry.registerSpawner:(Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/world/level/block/entity/trialspawner/TrialSpawnerConfig;)Lcom/ratrod/archaion/api/trial/TrialSpawnerVariant;
+      13: putstatic     #136                // Field DEEPSLATE_SPAWNER:Lcom/ratrod/archaion/api/trial/TrialSpawnerVariant;
+      16: ldc           #140                // String deepslate_vault
+      18: invokedynamic #142,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+      23: getstatic     #143                // Field com/ratrod/archaion/datagen/loot/ACLootTables.DEEPSLATE_VAULT:Lnet/minecraft/resources/ResourceKey;
+      26: getstatic     #146                // Field com/ratrod/archaion/registry/ACItems.ECHO_KEY:Lnet/neoforged/neoforge/registries/DeferredItem;
+      29: ldc2_w        #152                // double 4.0d
+      32: ldc2_w        #154                // double 4.5d
+      35: invokestatic  #156                // Method com/ratrod/archaion/api/trial/ACTrialRegistry.registerVault:(Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/resources/ResourceKey;Lnet/neoforged/neoforge/registries/DeferredItem;DD)Lcom/ratrod/archaion/api/trial/TrialVaultVariant;
+      38: putstatic     #160                // Field DEEPSLATE_VAULT:Lcom/ratrod/archaion/api/trial/TrialVaultVariant;
+      41: return
+}

@@ -1,0 +1,225 @@
+Compiled from "ACSounds.java"
+public class com.ratrod.archaion.registry.ACSounds {
+  public static final net.neoforged.neoforge.registries.DeferredRegister<net.minecraft.sounds.SoundEvent> SOUND_EVENT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredRegister;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> BRAVE_AMBIENT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> BRAVE_HURT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> BRAVE_DEATH;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> BRAVE_JUMP;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> ECHO_MACE_THROW;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> ECHO_STAR_BLAST;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_ACTION_START;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_ACTIVATE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_ACTIVATE_SMASH;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_AMBIENT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_DEATH;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_HURT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_SHOOT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_SMASH;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_SPAWN_ARCHAICS;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_SPIN;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_STEP;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_WARN_ARCHAICS;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_ECHO_CHARGE_INTERACT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_BLOCK_FALL;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_THEME_PHASE_1;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_THEME_PHASE_2;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> LOD_THEME_PHASE_3;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> SENTINEL_AMBIENT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> SENTINEL_HURT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> SENTINEL_DEATH;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> SENTINEL_START_CHARGING;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> HAUNTER_AMBIENT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> HAUNTER_EXPLODE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> HAUNTER_HURT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> TELEPORTER_WARPS;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public com.ratrod.archaion.registry.ACSounds();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.sounds.SoundEvent, net.minecraft.sounds.SoundEvent> register(java.lang.String);
+    descriptor: (Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    Code:
+       0: getstatic     #7                  // Field SOUND_EVENT:Lnet/neoforged/neoforge/registries/DeferredRegister;
+       3: aload_0
+       4: aload_0
+       5: invokedynamic #13,  0             // InvokeDynamic #0:get:(Ljava/lang/String;)Ljava/util/function/Supplier;
+      10: invokevirtual #17                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      13: areturn
+
+  private static net.minecraft.sounds.SoundEvent lambda$register$0(java.lang.String);
+    descriptor: (Ljava/lang/String;)Lnet/minecraft/sounds/SoundEvent;
+    Code:
+       0: aload_0
+       1: invokestatic  #23                 // Method com/ratrod/archaion/Archaion.prefix:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+       4: invokestatic  #29                 // Method net/minecraft/sounds/SoundEvent.createVariableRangeEvent:(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/sounds/SoundEvent;
+       7: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: getstatic     #35                 // Field net/minecraft/core/registries/BuiltInRegistries.SOUND_EVENT:Lnet/minecraft/core/Registry;
+       3: ldc           #40                 // String archaion
+       5: invokestatic  #42                 // Method net/neoforged/neoforge/registries/DeferredRegister.create:(Lnet/minecraft/core/Registry;Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister;
+       8: putstatic     #7                  // Field SOUND_EVENT:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      11: ldc           #46                 // String brave_ambient
+      13: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      16: putstatic     #51                 // Field BRAVE_AMBIENT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      19: ldc           #55                 // String brave_hurt
+      21: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      24: putstatic     #57                 // Field BRAVE_HURT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      27: ldc           #60                 // String brave_death
+      29: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      32: putstatic     #62                 // Field BRAVE_DEATH:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      35: ldc           #65                 // String brave_jump
+      37: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      40: putstatic     #67                 // Field BRAVE_JUMP:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      43: ldc           #70                 // String echo_mace_throw
+      45: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      48: putstatic     #72                 // Field ECHO_MACE_THROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      51: ldc           #75                 // String echo_star_blast
+      53: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      56: putstatic     #77                 // Field ECHO_STAR_BLAST:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      59: ldc           #80                 // String lod_action_start
+      61: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      64: putstatic     #82                 // Field LOD_ACTION_START:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      67: ldc           #85                 // String lod_activate
+      69: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      72: putstatic     #87                 // Field LOD_ACTIVATE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      75: ldc           #90                 // String lod_activate_smash
+      77: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      80: putstatic     #92                 // Field LOD_ACTIVATE_SMASH:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      83: ldc           #95                 // String lod_ambient
+      85: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      88: putstatic     #97                 // Field LOD_AMBIENT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      91: ldc           #100                // String lod_death
+      93: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      96: putstatic     #102                // Field LOD_DEATH:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      99: ldc           #105                // String lod_hurt
+     101: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     104: putstatic     #107                // Field LOD_HURT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     107: ldc           #110                // String lod_shoot
+     109: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     112: putstatic     #112                // Field LOD_SHOOT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     115: ldc           #115                // String lod_smash
+     117: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     120: putstatic     #117                // Field LOD_SMASH:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     123: ldc           #120                // String lod_spawn_archaics
+     125: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     128: putstatic     #122                // Field LOD_SPAWN_ARCHAICS:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     131: ldc           #125                // String lod_spin
+     133: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     136: putstatic     #127                // Field LOD_SPIN:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     139: ldc           #130                // String lod_step
+     141: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     144: putstatic     #132                // Field LOD_STEP:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     147: ldc           #135                // String lod_warn_archaics
+     149: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     152: putstatic     #137                // Field LOD_WARN_ARCHAICS:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     155: ldc           #140                // String lod_echo_charge_interact
+     157: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     160: putstatic     #142                // Field LOD_ECHO_CHARGE_INTERACT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     163: ldc           #145                // String lod_block_fall
+     165: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     168: putstatic     #147                // Field LOD_BLOCK_FALL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     171: ldc           #150                // String lod_boss_theme_phase_1
+     173: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     176: putstatic     #152                // Field LOD_THEME_PHASE_1:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     179: ldc           #155                // String lod_boss_theme_phase_2
+     181: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     184: putstatic     #157                // Field LOD_THEME_PHASE_2:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     187: ldc           #160                // String lod_boss_theme_phase_3
+     189: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     192: putstatic     #162                // Field LOD_THEME_PHASE_3:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     195: ldc           #165                // String sentinel_ambient
+     197: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     200: putstatic     #167                // Field SENTINEL_AMBIENT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     203: ldc           #170                // String sentinel_hurt
+     205: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     208: putstatic     #172                // Field SENTINEL_HURT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     211: ldc           #175                // String sentinel_death
+     213: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     216: putstatic     #177                // Field SENTINEL_DEATH:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     219: ldc           #180                // String sentinel_start_charging
+     221: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     224: putstatic     #182                // Field SENTINEL_START_CHARGING:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     227: ldc           #185                // String haunter_ambient
+     229: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     232: putstatic     #187                // Field HAUNTER_AMBIENT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     235: ldc           #190                // String haunter_explode
+     237: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     240: putstatic     #192                // Field HAUNTER_EXPLODE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     243: ldc           #195                // String haunter_hurt
+     245: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     248: putstatic     #197                // Field HAUNTER_HURT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     251: ldc           #200                // String teleporter_warps
+     253: invokestatic  #48                 // Method register:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     256: putstatic     #202                // Field TELEPORTER_WARPS:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     259: return
+}

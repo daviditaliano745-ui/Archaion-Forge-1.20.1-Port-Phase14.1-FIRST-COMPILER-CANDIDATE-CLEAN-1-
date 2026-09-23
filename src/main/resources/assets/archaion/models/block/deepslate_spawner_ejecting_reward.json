@@ -1,0 +1,11 @@
+{
+  "parent": "archaion:block/template_glowing_spawner",
+  "textures": {
+    "bottom": "archaion:block/deepslate_spawner_bottom",
+    "bottom_glow": "archaion:block/empty",
+    "side": "archaion:block/deepslate_spawner_side_active",
+    "side_glow": "archaion:block/deepslate_spawner_side_active_glow",
+    "top": "archaion:block/deepslate_spawner_top_ejecting_reward",
+    "top_glow": "archaion:block/deepslate_spawner_top_ejecting_reward_glow"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "brave_ambient": {
+    "sounds": [
+      "archaion:brave_ambient"
+    ],
+    "subtitle": "subtitle.archaion.brave_ambient"
+  },
+  "brave_death": {
+    "sounds": [
+      "archaion:brave_death"
+    ],
+    "subtitle": "subtitle.archaion.brave_death"
+  },
+  "brave_hurt": {
+    "sounds": [
+      "archaion:brave_hurt"
+    ],
+    "subtitle": "subtitle.archaion.brave_hurt"
+  },
+  "brave_jump": {
+    "sounds": [
+      "archaion:brave_jump"
+    ],
+    "subtitle": "subtitle.archaion.brave_jump"
+  },
+  "echo_mace_throw": {
+    "sounds": [
+      "archaion:echo_mace_throw"
+    ],
+    "subtitle": "subtitle.archaion.echo_mace_throw"
+  },
+  "echo_star_blast": {
+    "sounds": [
+      "archaion:echo_star_blast"
+    ],
+    "subtitle": "subtitle.archaion.echo_star_blast"
+  },
+  "haunter_ambient": {
+    "sounds": [
+      "archaion:haunter_ambient"
+    ],
+    "subtitle": "subtitle.archaion.haunter_ambient"
+  },
+  "haunter_explode": {
+    "sounds": [
+      "archaion:haunter_explode"
+    ],
+    "subtitle": "subtitle.archaion.haunter_explode"
+  },
+  "haunter_hurt": {
+    "sounds": [
+      "archaion:haunter_hurt"
+    ],
+    "subtitle": "subtitle.archaion.haunter_hurt"
+  },
+  "lod_action_start": {
+    "sounds": [
+      "archaion:lod_action_start"
+    ],
+    "subtitle": "subtitle.archaion.lod_action_start"
+  },
+  "lod_activate": {
+    "sounds": [
+      "archaion:lod_activate"
+    ],
+    "subtitle": "subtitle.archaion.lod_activate"
+  },
+  "lod_activate_smash": {
+    "sounds": [
+      "archaion:lod_activate_smash"
+    ],
+    "subtitle": "subtitle.archaion.lod_activate_smash"
+  },
+  "lod_ambient": {
+    "sounds": [
+      "archaion:lod_ambient"
+    ],
+    "subtitle": "subtitle.archaion.lod_ambient"
+  },
+  "lod_block_fall": {
+    "sounds": [
+      "archaion:lod_block_fall"
+    ],
+    "subtitle": "subtitle.archaion.lod_block_fall"
+  },
+  "lod_boss_theme_phase_1": {
+    "sounds": [
+      {
+        "name": "archaion:lod_boss_theme_phase_1",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitle.archaion.lod_boss_theme_phase_1"
+  },
+  "lod_boss_theme_phase_2": {
+    "sounds": [
+      {
+        "name": "archaion:lod_boss_theme_phase_2",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitle.archaion.lod_boss_theme_phase_2"
+  },
+  "lod_boss_theme_phase_3": {
+    "sounds": [
+      {
+        "name": "archaion:lod_boss_theme_phase_3",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitle.archaion.lod_boss_theme_phase_3"
+  },
+  "lod_death": {
+    "sounds": [
+      "archaion:lod_death"
+    ],
+    "subtitle": "subtitle.archaion.lod_death"
+  },
+  "lod_echo_charge_interact": {
+    "sounds": [
+      "archaion:lod_echo_charge_interact"
+    ],
+    "subtitle": "subtitle.archaion.lod_echo_charge_interact"
+  },
+  "lod_hurt": {
+    "sounds": [
+      "archaion:lod_hurt"
+    ],
+    "subtitle": "subtitle.archaion.lod_hurt"
+  },
+  "lod_shoot": {
+    "sounds": [
+      "archaion:lod_shoot"
+    ],
+    "subtitle": "subtitle.archaion.lod_shoot"
+  },
+  "lod_smash": {
+    "sounds": [
+      "archaion:lod_smash"
+    ],
+    "subtitle": "subtitle.archaion.lod_smash"
+  },
+  "lod_spawn_archaics": {
+    "sounds": [
+      "archaion:lod_spawn_archaics"
+    ],
+    "subtitle": "subtitle.archaion.lod_spawn_archaics"
+  },
+  "lod_spin": {
+    "sounds": [
+      "archaion:lod_spin"
+    ],
+    "subtitle": "subtitle.archaion.lod_spin"
+  },
+  "lod_step": {
+    "sounds": [
+      "archaion:lod_step"
+    ],
+    "subtitle": "subtitle.archaion.lod_step"
+  },
+  "lod_warn_archaics": {
+    "sounds": [
+      "archaion:lod_warn_archaics"
+    ],
+    "subtitle": "subtitle.archaion.lod_warn_archaics"
+  },
+  "sentinel_ambient": {
+    "sounds": [
+      "archaion:sentinel_ambient"
+    ],
+    "subtitle": "subtitle.archaion.sentinel_ambient"
+  },
+  "sentinel_death": {
+    "sounds": [
+      "archaion:sentinel_death"
+    ],
+    "subtitle": "subtitle.archaion.sentinel_death"
+  },
+  "sentinel_hurt": {
+    "sounds": [
+      "archaion:sentinel_hurt"
+    ],
+    "subtitle": "subtitle.archaion.sentinel_hurt"
+  },
+  "sentinel_start_charging": {
+    "sounds": [
+      "archaion:sentinel_start_charging"
+    ],
+    "subtitle": "subtitle.archaion.sentinel_start_charging"
+  },
+  "teleporter_warps": {
+    "sounds": [
+      "archaion:teleporter_warps"
+    ],
+    "subtitle": "subtitle.archaion.teleporter_warps"
+  }
+}

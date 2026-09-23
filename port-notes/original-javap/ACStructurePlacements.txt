@@ -1,0 +1,41 @@
+Compiled from "ACStructurePlacements.java"
+public class com.ratrod.archaion.registry.ACStructurePlacements {
+  public static final net.neoforged.neoforge.registries.DeferredRegister<net.minecraft.world.level.levelgen.structure.placement.StructurePlacementType<?>> STRUCTURE_PLACEMENT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredRegister;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.level.levelgen.structure.placement.StructurePlacementType<?>, net.minecraft.world.level.levelgen.structure.placement.StructurePlacementType<com.ratrod.archaion.worldgen.placement.AvoidTrialChambersStructurePlacement>> AVOID_TRIAL_CHAMBERS;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public com.ratrod.archaion.registry.ACStructurePlacements();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static net.minecraft.world.level.levelgen.structure.placement.StructurePlacementType lambda$static$1();
+    descriptor: ()Lnet/minecraft/world/level/levelgen/structure/placement/StructurePlacementType;
+    Code:
+       0: invokedynamic #7,  0              // InvokeDynamic #0:codec:()Lnet/minecraft/world/level/levelgen/structure/placement/StructurePlacementType;
+       5: areturn
+
+  private static com.mojang.serialization.MapCodec lambda$static$0();
+    descriptor: ()Lcom/mojang/serialization/MapCodec;
+    Code:
+       0: getstatic     #11                 // Field com/ratrod/archaion/worldgen/placement/AvoidTrialChambersStructurePlacement.CODEC:Lcom/mojang/serialization/MapCodec;
+       3: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: getstatic     #17                 // Field net/minecraft/core/registries/Registries.STRUCTURE_PLACEMENT:Lnet/minecraft/resources/ResourceKey;
+       3: ldc           #23                 // String archaion
+       5: invokestatic  #25                 // Method net/neoforged/neoforge/registries/DeferredRegister.create:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister;
+       8: putstatic     #31                 // Field STRUCTURE_PLACEMENT:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      11: getstatic     #31                 // Field STRUCTURE_PLACEMENT:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      14: ldc           #36                 // String avoid_trial_chambers
+      16: invokedynamic #38,  0             // InvokeDynamic #1:get:()Ljava/util/function/Supplier;
+      21: invokevirtual #42                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      24: putstatic     #46                 // Field AVOID_TRIAL_CHAMBERS:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      27: return
+}

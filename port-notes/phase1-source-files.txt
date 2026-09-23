@@ -1,0 +1,8 @@
+src/main/java/com/ratrod/archaion/Archaion.java
+src/main/java/com/ratrod/archaion/block/ReinforcedBarBlock.java
+src/main/java/com/ratrod/archaion/effect/ArmorBreakEffect.java
+src/main/java/com/ratrod/archaion/registry/ACBlocks.java
+src/main/java/com/ratrod/archaion/registry/ACCreativeModeTabs.java
+src/main/java/com/ratrod/archaion/registry/ACEffects.java
+src/main/java/com/ratrod/archaion/registry/ACItems.java
+src/main/java/com/ratrod/archaion/registry/ACSounds.java

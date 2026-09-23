@@ -1,0 +1,24 @@
+{
+  "name": "archaion:ancient_keep",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "archaion:ancient_keep/arena",
+        "processors": "minecraft:ancient_city_start_degradation",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "archaion:ancient_keep/arena_hall",
+        "processors": "minecraft:ancient_city_start_degradation",
+        "projection": "rigid"
+      }
+    }
+  ]
+}

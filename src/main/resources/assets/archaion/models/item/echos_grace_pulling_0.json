@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "layer0": "archaion:item/echos_grace_pulling_0"
+  }
+}

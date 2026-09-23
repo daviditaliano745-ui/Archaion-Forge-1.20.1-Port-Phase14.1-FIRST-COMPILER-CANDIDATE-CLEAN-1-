@@ -1,0 +1,477 @@
+Compiled from "ACBlocks.java"
+public class com.ratrod.archaion.registry.ACBlocks {
+  public static final net.neoforged.neoforge.registries.DeferredRegister$Blocks BLOCK;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredRegister$Blocks;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.Block> REINFORCED_POLISHED_DEEPSLATE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.Block> REINFORCED_DEEPSLATE_BRICKS;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.Block> REINFORCED_DEEPSLATE_TILES;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.Block> REINFORCED_DEEPSLATE_PILLAR;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.Block> DEEPSLATE_PILLAR;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.Block> SOUL_LAMP;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.Block> REINFORCED_GRATE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.Block> REINFORCED_CHAIN;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.StairBlock> REINFORCED_POLISHED_DEEPSLATE_STAIRS;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.StairBlock> REINFORCED_DEEPSLATE_BRICK_STAIRS;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.StairBlock> REINFORCED_DEEPSLATE_TILE_STAIRS;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.SlabBlock> REINFORCED_POLISHED_DEEPSLATE_SLAB;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.SlabBlock> REINFORCED_DEEPSLATE_BRICK_SLAB;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.SlabBlock> REINFORCED_DEEPSLATE_TILE_SLAB;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.WallBlock> REINFORCED_POLISHED_DEEPSLATE_WALL;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.WallBlock> REINFORCED_DEEPSLATE_BRICK_WALL;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.WallBlock> REINFORCED_DEEPSLATE_TILE_WALL;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<com.ratrod.archaion.block.ReinforcedBarBlock> REINFORCED_BARS;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<com.ratrod.archaion.block.HologramBlock> DEEPSLATE_HOLOGRAM;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public static final net.neoforged.neoforge.registries.DeferredBlock<com.ratrod.archaion.block.TeleporterBlock> DEEPSLATE_TELEPORTER;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredBlock;
+
+  public com.ratrod.archaion.registry.ACBlocks();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static <T extends net.minecraft.world.level.block.Block> net.neoforged.neoforge.registries.DeferredBlock<T> registerBlock(java.lang.String, java.util.function.Supplier<T>);
+    descriptor: (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+    Code:
+       0: aload_0
+       1: aload_1
+       2: new           #7                  // class net/minecraft/world/item/Item$Properties
+       5: dup
+       6: invokespecial #9                  // Method net/minecraft/world/item/Item$Properties."<init>":()V
+       9: invokestatic  #10                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;Lnet/minecraft/world/item/Item$Properties;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+      12: areturn
+
+  public static <T extends net.minecraft.world.level.block.Block> net.neoforged.neoforge.registries.DeferredBlock<T> registerBlock(java.lang.String, java.util.function.Supplier<T>, net.minecraft.world.item.Item$Properties);
+    descriptor: (Ljava/lang/String;Ljava/util/function/Supplier;Lnet/minecraft/world/item/Item$Properties;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+    Code:
+       0: getstatic     #16                 // Field BLOCK:Lnet/neoforged/neoforge/registries/DeferredRegister$Blocks;
+       3: aload_0
+       4: aload_1
+       5: invokevirtual #20                 // Method net/neoforged/neoforge/registries/DeferredRegister$Blocks.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+       8: astore_3
+       9: getstatic     #26                 // Field com/ratrod/archaion/registry/ACItems.ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+      12: aload_0
+      13: aload_3
+      14: aload_2
+      15: invokedynamic #32,  0             // InvokeDynamic #0:get:(Lnet/neoforged/neoforge/registries/DeferredBlock;Lnet/minecraft/world/item/Item$Properties;)Ljava/util/function/Supplier;
+      20: invokevirtual #36                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredItem;
+      23: pop
+      24: aload_3
+      25: areturn
+
+  public static <T extends net.minecraft.world.level.block.Block> net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.StairBlock> registerStairs(java.lang.String, net.neoforged.neoforge.registries.DeferredBlock<T>);
+    descriptor: (Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokedynamic #41,  0             // InvokeDynamic #1:get:(Lnet/neoforged/neoforge/registries/DeferredBlock;)Ljava/util/function/Supplier;
+       7: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+      10: areturn
+
+  public static <T extends net.minecraft.world.level.block.Block> net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.SlabBlock> registerSlabs(java.lang.String, net.neoforged.neoforge.registries.DeferredBlock<T>);
+    descriptor: (Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokedynamic #46,  0             // InvokeDynamic #2:get:(Lnet/neoforged/neoforge/registries/DeferredBlock;)Ljava/util/function/Supplier;
+       7: new           #7                  // class net/minecraft/world/item/Item$Properties
+      10: dup
+      11: invokespecial #9                  // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      14: invokestatic  #10                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;Lnet/minecraft/world/item/Item$Properties;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+      17: areturn
+
+  public static <T extends net.minecraft.world.level.block.Block> net.neoforged.neoforge.registries.DeferredBlock<net.minecraft.world.level.block.WallBlock> registerWalls(java.lang.String, net.neoforged.neoforge.registries.DeferredBlock<T>);
+    descriptor: (Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+    Code:
+       0: aload_0
+       1: invokedynamic #47,  0             // InvokeDynamic #3:get:()Ljava/util/function/Supplier;
+       6: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+       9: areturn
+
+  private static net.minecraft.world.level.block.WallBlock lambda$registerWalls$15();
+    descriptor: ()Lnet/minecraft/world/level/block/WallBlock;
+    Code:
+       0: new           #50                 // class net/minecraft/world/level/block/WallBlock
+       3: dup
+       4: getstatic     #52                 // Field net/minecraft/world/level/block/Blocks.COBBLESTONE_WALL:Lnet/minecraft/world/level/block/Block;
+       7: invokestatic  #58                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.ofFullCopy:(Lnet/minecraft/world/level/block/state/BlockBehaviour;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      10: invokespecial #64                 // Method net/minecraft/world/level/block/WallBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      13: areturn
+
+  private static net.minecraft.world.level.block.SlabBlock lambda$registerSlabs$14(net.neoforged.neoforge.registries.DeferredBlock);
+    descriptor: (Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/minecraft/world/level/block/SlabBlock;
+    Code:
+       0: new           #67                 // class net/minecraft/world/level/block/SlabBlock
+       3: dup
+       4: aload_0
+       5: invokevirtual #69                 // Method net/neoforged/neoforge/registries/DeferredBlock.get:()Ljava/lang/Object;
+       8: checkcast     #74                 // class net/minecraft/world/level/block/state/BlockBehaviour
+      11: invokestatic  #58                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.ofFullCopy:(Lnet/minecraft/world/level/block/state/BlockBehaviour;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      14: invokespecial #76                 // Method net/minecraft/world/level/block/SlabBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      17: areturn
+
+  private static net.minecraft.world.level.block.StairBlock lambda$registerStairs$13(net.neoforged.neoforge.registries.DeferredBlock);
+    descriptor: (Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/minecraft/world/level/block/StairBlock;
+    Code:
+       0: new           #77                 // class net/minecraft/world/level/block/StairBlock
+       3: dup
+       4: aload_0
+       5: invokevirtual #69                 // Method net/neoforged/neoforge/registries/DeferredBlock.get:()Ljava/lang/Object;
+       8: checkcast     #79                 // class net/minecraft/world/level/block/Block
+      11: invokevirtual #81                 // Method net/minecraft/world/level/block/Block.defaultBlockState:()Lnet/minecraft/world/level/block/state/BlockState;
+      14: aload_0
+      15: invokevirtual #69                 // Method net/neoforged/neoforge/registries/DeferredBlock.get:()Ljava/lang/Object;
+      18: checkcast     #74                 // class net/minecraft/world/level/block/state/BlockBehaviour
+      21: invokestatic  #58                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.ofFullCopy:(Lnet/minecraft/world/level/block/state/BlockBehaviour;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      24: invokespecial #85                 // Method net/minecraft/world/level/block/StairBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      27: areturn
+
+  private static net.minecraft.world.item.BlockItem lambda$registerBlock$12(net.neoforged.neoforge.registries.DeferredBlock, net.minecraft.world.item.Item$Properties);
+    descriptor: (Lnet/neoforged/neoforge/registries/DeferredBlock;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/BlockItem;
+    Code:
+       0: new           #88                 // class net/minecraft/world/item/BlockItem
+       3: dup
+       4: aload_0
+       5: invokevirtual #69                 // Method net/neoforged/neoforge/registries/DeferredBlock.get:()Ljava/lang/Object;
+       8: checkcast     #79                 // class net/minecraft/world/level/block/Block
+      11: aload_1
+      12: invokespecial #90                 // Method net/minecraft/world/item/BlockItem."<init>":(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;)V
+      15: areturn
+
+  private static com.ratrod.archaion.block.TeleporterBlock lambda$static$11();
+    descriptor: ()Lcom/ratrod/archaion/block/TeleporterBlock;
+    Code:
+       0: new           #93                 // class com/ratrod/archaion/block/TeleporterBlock
+       3: dup
+       4: invokestatic  #95                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.of:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #99                 // Field net/minecraft/world/level/material/MapColor.DEEPSLATE:Lnet/minecraft/world/level/material/MapColor;
+      10: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: getstatic     #109                // Field net/minecraft/world/level/block/state/properties/NoteBlockInstrument.BASEDRUM:Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;
+      16: invokevirtual #115                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.instrument:(Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      19: getstatic     #119                // Field net/minecraft/world/level/block/SoundType.DEEPSLATE:Lnet/minecraft/world/level/block/SoundType;
+      22: invokevirtual #124                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      25: invokevirtual #128                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.noOcclusion:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      28: ldc           #131                // float 4.5f
+      30: ldc           #132                // float 1200.0f
+      32: invokevirtual #133                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      35: invokespecial #137                // Method com/ratrod/archaion/block/TeleporterBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      38: areturn
+
+  private static com.ratrod.archaion.block.HologramBlock lambda$static$10();
+    descriptor: ()Lcom/ratrod/archaion/block/HologramBlock;
+    Code:
+       0: new           #138                // class com/ratrod/archaion/block/HologramBlock
+       3: dup
+       4: invokestatic  #95                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.of:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #99                 // Field net/minecraft/world/level/material/MapColor.DEEPSLATE:Lnet/minecraft/world/level/material/MapColor;
+      10: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: getstatic     #109                // Field net/minecraft/world/level/block/state/properties/NoteBlockInstrument.BASEDRUM:Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;
+      16: invokevirtual #115                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.instrument:(Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      19: getstatic     #119                // Field net/minecraft/world/level/block/SoundType.DEEPSLATE:Lnet/minecraft/world/level/block/SoundType;
+      22: invokevirtual #124                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      25: invokevirtual #128                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.noOcclusion:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      28: ldc           #131                // float 4.5f
+      30: ldc           #132                // float 1200.0f
+      32: invokevirtual #133                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      35: invokespecial #140                // Method com/ratrod/archaion/block/HologramBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      38: areturn
+
+  private static com.ratrod.archaion.block.ReinforcedBarBlock lambda$static$9();
+    descriptor: ()Lcom/ratrod/archaion/block/ReinforcedBarBlock;
+    Code:
+       0: new           #141                // class com/ratrod/archaion/block/ReinforcedBarBlock
+       3: dup
+       4: invokestatic  #95                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.of:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #99                 // Field net/minecraft/world/level/material/MapColor.DEEPSLATE:Lnet/minecraft/world/level/material/MapColor;
+      10: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: getstatic     #109                // Field net/minecraft/world/level/block/state/properties/NoteBlockInstrument.BASEDRUM:Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;
+      16: invokevirtual #115                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.instrument:(Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      19: getstatic     #119                // Field net/minecraft/world/level/block/SoundType.DEEPSLATE:Lnet/minecraft/world/level/block/SoundType;
+      22: invokevirtual #124                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      25: ldc           #143                // float 55.0f
+      27: ldc           #132                // float 1200.0f
+      29: invokevirtual #133                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      32: invokespecial #144                // Method com/ratrod/archaion/block/ReinforcedBarBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      35: areturn
+
+  private static net.minecraft.world.level.block.Block lambda$static$8();
+    descriptor: ()Lnet/minecraft/world/level/block/Block;
+    Code:
+       0: new           #145                // class net/minecraft/world/level/block/ChainBlock
+       3: dup
+       4: invokestatic  #95                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.of:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #99                 // Field net/minecraft/world/level/material/MapColor.DEEPSLATE:Lnet/minecraft/world/level/material/MapColor;
+      10: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: getstatic     #109                // Field net/minecraft/world/level/block/state/properties/NoteBlockInstrument.BASEDRUM:Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;
+      16: invokevirtual #115                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.instrument:(Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      19: getstatic     #147                // Field net/minecraft/world/level/block/SoundType.CHAIN:Lnet/minecraft/world/level/block/SoundType;
+      22: invokevirtual #124                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      25: ldc           #143                // float 55.0f
+      27: ldc           #132                // float 1200.0f
+      29: invokevirtual #133                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      32: invokevirtual #128                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.noOcclusion:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      35: invokespecial #150                // Method net/minecraft/world/level/block/ChainBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      38: areturn
+
+  private static net.minecraft.world.level.block.Block lambda$static$7();
+    descriptor: ()Lnet/minecraft/world/level/block/Block;
+    Code:
+       0: new           #151                // class net/minecraft/world/level/block/WaterloggedTransparentBlock
+       3: dup
+       4: invokestatic  #95                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.of:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #99                 // Field net/minecraft/world/level/material/MapColor.DEEPSLATE:Lnet/minecraft/world/level/material/MapColor;
+      10: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: getstatic     #109                // Field net/minecraft/world/level/block/state/properties/NoteBlockInstrument.BASEDRUM:Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;
+      16: invokevirtual #115                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.instrument:(Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      19: getstatic     #153                // Field net/minecraft/world/level/block/SoundType.COPPER_GRATE:Lnet/minecraft/world/level/block/SoundType;
+      22: invokevirtual #124                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      25: ldc           #143                // float 55.0f
+      27: ldc           #132                // float 1200.0f
+      29: invokevirtual #133                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      32: invokevirtual #128                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.noOcclusion:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      35: invokespecial #156                // Method net/minecraft/world/level/block/WaterloggedTransparentBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      38: areturn
+
+  private static net.minecraft.world.level.block.Block lambda$static$6();
+    descriptor: ()Lnet/minecraft/world/level/block/Block;
+    Code:
+       0: new           #79                 // class net/minecraft/world/level/block/Block
+       3: dup
+       4: invokestatic  #95                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.of:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #157                // Field net/minecraft/world/level/material/MapColor.QUARTZ:Lnet/minecraft/world/level/material/MapColor;
+      10: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: getstatic     #160                // Field net/minecraft/world/level/block/state/properties/NoteBlockInstrument.HAT:Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;
+      16: invokevirtual #115                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.instrument:(Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      19: ldc           #163                // float 0.3f
+      21: invokevirtual #164                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(F)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      24: getstatic     #167                // Field net/minecraft/world/level/block/SoundType.GLASS:Lnet/minecraft/world/level/block/SoundType;
+      27: invokevirtual #124                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      30: invokedynamic #170,  0            // InvokeDynamic #4:applyAsInt:()Ljava/util/function/ToIntFunction;
+      35: invokevirtual #174                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.lightLevel:(Ljava/util/function/ToIntFunction;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      38: invokespecial #178                // Method net/minecraft/world/level/block/Block."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      41: areturn
+
+  private static int lambda$static$5(net.minecraft.world.level.block.state.BlockState);
+    descriptor: (Lnet/minecraft/world/level/block/state/BlockState;)I
+    Code:
+       0: bipush        15
+       2: ireturn
+
+  private static net.minecraft.world.level.block.Block lambda$static$4();
+    descriptor: ()Lnet/minecraft/world/level/block/Block;
+    Code:
+       0: new           #179                // class net/minecraft/world/level/block/RotatedPillarBlock
+       3: dup
+       4: invokestatic  #95                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.of:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #99                 // Field net/minecraft/world/level/material/MapColor.DEEPSLATE:Lnet/minecraft/world/level/material/MapColor;
+      10: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: getstatic     #109                // Field net/minecraft/world/level/block/state/properties/NoteBlockInstrument.BASEDRUM:Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;
+      16: invokevirtual #115                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.instrument:(Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      19: getstatic     #119                // Field net/minecraft/world/level/block/SoundType.DEEPSLATE:Lnet/minecraft/world/level/block/SoundType;
+      22: invokevirtual #124                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      25: ldc           #131                // float 4.5f
+      27: ldc           #132                // float 1200.0f
+      29: invokevirtual #133                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      32: invokespecial #181                // Method net/minecraft/world/level/block/RotatedPillarBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      35: areturn
+
+  private static net.minecraft.world.level.block.Block lambda$static$3();
+    descriptor: ()Lnet/minecraft/world/level/block/Block;
+    Code:
+       0: new           #179                // class net/minecraft/world/level/block/RotatedPillarBlock
+       3: dup
+       4: invokestatic  #95                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.of:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #99                 // Field net/minecraft/world/level/material/MapColor.DEEPSLATE:Lnet/minecraft/world/level/material/MapColor;
+      10: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: getstatic     #109                // Field net/minecraft/world/level/block/state/properties/NoteBlockInstrument.BASEDRUM:Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;
+      16: invokevirtual #115                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.instrument:(Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      19: getstatic     #119                // Field net/minecraft/world/level/block/SoundType.DEEPSLATE:Lnet/minecraft/world/level/block/SoundType;
+      22: invokevirtual #124                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      25: ldc           #143                // float 55.0f
+      27: ldc           #132                // float 1200.0f
+      29: invokevirtual #133                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      32: invokespecial #181                // Method net/minecraft/world/level/block/RotatedPillarBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      35: areturn
+
+  private static net.minecraft.world.level.block.Block lambda$static$2();
+    descriptor: ()Lnet/minecraft/world/level/block/Block;
+    Code:
+       0: new           #79                 // class net/minecraft/world/level/block/Block
+       3: dup
+       4: invokestatic  #95                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.of:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #99                 // Field net/minecraft/world/level/material/MapColor.DEEPSLATE:Lnet/minecraft/world/level/material/MapColor;
+      10: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: getstatic     #109                // Field net/minecraft/world/level/block/state/properties/NoteBlockInstrument.BASEDRUM:Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;
+      16: invokevirtual #115                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.instrument:(Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      19: getstatic     #119                // Field net/minecraft/world/level/block/SoundType.DEEPSLATE:Lnet/minecraft/world/level/block/SoundType;
+      22: invokevirtual #124                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      25: ldc           #143                // float 55.0f
+      27: ldc           #132                // float 1200.0f
+      29: invokevirtual #133                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      32: invokespecial #178                // Method net/minecraft/world/level/block/Block."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      35: areturn
+
+  private static net.minecraft.world.level.block.Block lambda$static$1();
+    descriptor: ()Lnet/minecraft/world/level/block/Block;
+    Code:
+       0: new           #79                 // class net/minecraft/world/level/block/Block
+       3: dup
+       4: invokestatic  #95                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.of:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #99                 // Field net/minecraft/world/level/material/MapColor.DEEPSLATE:Lnet/minecraft/world/level/material/MapColor;
+      10: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: getstatic     #109                // Field net/minecraft/world/level/block/state/properties/NoteBlockInstrument.BASEDRUM:Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;
+      16: invokevirtual #115                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.instrument:(Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      19: getstatic     #119                // Field net/minecraft/world/level/block/SoundType.DEEPSLATE:Lnet/minecraft/world/level/block/SoundType;
+      22: invokevirtual #124                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      25: ldc           #143                // float 55.0f
+      27: ldc           #132                // float 1200.0f
+      29: invokevirtual #133                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      32: invokespecial #178                // Method net/minecraft/world/level/block/Block."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      35: areturn
+
+  private static net.minecraft.world.level.block.Block lambda$static$0();
+    descriptor: ()Lnet/minecraft/world/level/block/Block;
+    Code:
+       0: new           #79                 // class net/minecraft/world/level/block/Block
+       3: dup
+       4: invokestatic  #95                 // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.of:()Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+       7: getstatic     #99                 // Field net/minecraft/world/level/material/MapColor.DEEPSLATE:Lnet/minecraft/world/level/material/MapColor;
+      10: invokevirtual #105                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.mapColor:(Lnet/minecraft/world/level/material/MapColor;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      13: getstatic     #109                // Field net/minecraft/world/level/block/state/properties/NoteBlockInstrument.BASEDRUM:Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;
+      16: invokevirtual #115                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.instrument:(Lnet/minecraft/world/level/block/state/properties/NoteBlockInstrument;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      19: getstatic     #119                // Field net/minecraft/world/level/block/SoundType.DEEPSLATE:Lnet/minecraft/world/level/block/SoundType;
+      22: invokevirtual #124                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.sound:(Lnet/minecraft/world/level/block/SoundType;)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      25: ldc           #143                // float 55.0f
+      27: ldc           #132                // float 1200.0f
+      29: invokevirtual #133                // Method net/minecraft/world/level/block/state/BlockBehaviour$Properties.strength:(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+      32: invokespecial #178                // Method net/minecraft/world/level/block/Block."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+      35: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: ldc           #184                // String archaion
+       2: invokestatic  #186                // Method net/neoforged/neoforge/registries/DeferredRegister.createBlocks:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister$Blocks;
+       5: putstatic     #16                 // Field BLOCK:Lnet/neoforged/neoforge/registries/DeferredRegister$Blocks;
+       8: ldc           #192                // String reinforced_polished_deepslate
+      10: invokedynamic #194,  0            // InvokeDynamic #5:get:()Ljava/util/function/Supplier;
+      15: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+      18: putstatic     #195                // Field REINFORCED_POLISHED_DEEPSLATE:Lnet/neoforged/neoforge/registries/DeferredBlock;
+      21: ldc           #199                // String reinforced_deepslate_bricks
+      23: invokedynamic #201,  0            // InvokeDynamic #6:get:()Ljava/util/function/Supplier;
+      28: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+      31: putstatic     #202                // Field REINFORCED_DEEPSLATE_BRICKS:Lnet/neoforged/neoforge/registries/DeferredBlock;
+      34: ldc           #205                // String reinforced_deepslate_tiles
+      36: invokedynamic #207,  0            // InvokeDynamic #7:get:()Ljava/util/function/Supplier;
+      41: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+      44: putstatic     #208                // Field REINFORCED_DEEPSLATE_TILES:Lnet/neoforged/neoforge/registries/DeferredBlock;
+      47: ldc           #211                // String reinforced_deepslate_pillar
+      49: invokedynamic #213,  0            // InvokeDynamic #8:get:()Ljava/util/function/Supplier;
+      54: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+      57: putstatic     #214                // Field REINFORCED_DEEPSLATE_PILLAR:Lnet/neoforged/neoforge/registries/DeferredBlock;
+      60: ldc           #217                // String deepslate_pillar
+      62: invokedynamic #219,  0            // InvokeDynamic #9:get:()Ljava/util/function/Supplier;
+      67: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+      70: putstatic     #220                // Field DEEPSLATE_PILLAR:Lnet/neoforged/neoforge/registries/DeferredBlock;
+      73: ldc           #223                // String soul_lamp
+      75: invokedynamic #225,  0            // InvokeDynamic #10:get:()Ljava/util/function/Supplier;
+      80: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+      83: putstatic     #226                // Field SOUL_LAMP:Lnet/neoforged/neoforge/registries/DeferredBlock;
+      86: ldc           #229                // String reinforced_grate
+      88: invokedynamic #231,  0            // InvokeDynamic #11:get:()Ljava/util/function/Supplier;
+      93: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+      96: putstatic     #232                // Field REINFORCED_GRATE:Lnet/neoforged/neoforge/registries/DeferredBlock;
+      99: ldc           #235                // String reinforced_chain
+     101: invokedynamic #237,  0            // InvokeDynamic #12:get:()Ljava/util/function/Supplier;
+     106: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     109: putstatic     #238                // Field REINFORCED_CHAIN:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     112: ldc           #241                // String reinforced_polished_deepslate_stairs
+     114: getstatic     #195                // Field REINFORCED_POLISHED_DEEPSLATE:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     117: invokestatic  #243                // Method registerStairs:(Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     120: putstatic     #247                // Field REINFORCED_POLISHED_DEEPSLATE_STAIRS:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     123: ldc           #250                // String reinforced_deepslate_brick_stairs
+     125: getstatic     #202                // Field REINFORCED_DEEPSLATE_BRICKS:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     128: invokestatic  #243                // Method registerStairs:(Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     131: putstatic     #252                // Field REINFORCED_DEEPSLATE_BRICK_STAIRS:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     134: ldc           #255                // String reinforced_deepslate_tile_stairs
+     136: getstatic     #208                // Field REINFORCED_DEEPSLATE_TILES:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     139: invokestatic  #243                // Method registerStairs:(Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     142: putstatic     #257                // Field REINFORCED_DEEPSLATE_TILE_STAIRS:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     145: ldc_w         #260                // String reinforced_polished_deepslate_slab
+     148: getstatic     #195                // Field REINFORCED_POLISHED_DEEPSLATE:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     151: invokestatic  #262                // Method registerSlabs:(Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     154: putstatic     #265                // Field REINFORCED_POLISHED_DEEPSLATE_SLAB:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     157: ldc_w         #268                // String reinforced_deepslate_brick_slab
+     160: getstatic     #202                // Field REINFORCED_DEEPSLATE_BRICKS:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     163: invokestatic  #262                // Method registerSlabs:(Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     166: putstatic     #270                // Field REINFORCED_DEEPSLATE_BRICK_SLAB:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     169: ldc_w         #273                // String reinforced_deepslate_tile_slab
+     172: getstatic     #208                // Field REINFORCED_DEEPSLATE_TILES:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     175: invokestatic  #262                // Method registerSlabs:(Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     178: putstatic     #275                // Field REINFORCED_DEEPSLATE_TILE_SLAB:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     181: ldc_w         #278                // String reinforced_polished_deepslate_wall
+     184: getstatic     #195                // Field REINFORCED_POLISHED_DEEPSLATE:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     187: invokestatic  #280                // Method registerWalls:(Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     190: putstatic     #283                // Field REINFORCED_POLISHED_DEEPSLATE_WALL:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     193: ldc_w         #286                // String reinforced_deepslate_brick_wall
+     196: getstatic     #202                // Field REINFORCED_DEEPSLATE_BRICKS:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     199: invokestatic  #280                // Method registerWalls:(Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     202: putstatic     #288                // Field REINFORCED_DEEPSLATE_BRICK_WALL:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     205: ldc_w         #291                // String reinforced_deepslate_tile_wall
+     208: getstatic     #208                // Field REINFORCED_DEEPSLATE_TILES:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     211: invokestatic  #280                // Method registerWalls:(Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredBlock;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     214: putstatic     #293                // Field REINFORCED_DEEPSLATE_TILE_WALL:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     217: ldc_w         #296                // String reinforced_bars
+     220: invokedynamic #298,  0            // InvokeDynamic #13:get:()Ljava/util/function/Supplier;
+     225: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     228: putstatic     #299                // Field REINFORCED_BARS:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     231: ldc_w         #302                // String deepslate_hologram
+     234: invokedynamic #304,  0            // InvokeDynamic #14:get:()Ljava/util/function/Supplier;
+     239: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     242: putstatic     #305                // Field DEEPSLATE_HOLOGRAM:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     245: ldc_w         #308                // String deepslate_teleporter
+     248: invokedynamic #310,  0            // InvokeDynamic #15:get:()Ljava/util/function/Supplier;
+     253: invokestatic  #44                 // Method registerBlock:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredBlock;
+     256: putstatic     #311                // Field DEEPSLATE_TELEPORTER:Lnet/neoforged/neoforge/registries/DeferredBlock;
+     259: return
+}

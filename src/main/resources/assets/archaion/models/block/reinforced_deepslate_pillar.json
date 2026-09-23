@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "archaion:block/reinforced_deepslate_pillar_top",
+    "side": "archaion:block/reinforced_deepslate_pillar_side"
+  }
+}

@@ -1,0 +1,29 @@
+Phase 13 cumulative static validation
+=====================================
+Active Java files: 110
+JSON / pack metadata parsed: 160
+JSON parse errors: 0
+Converted Ancient Keep NBT templates: 20
+NBT structural read errors: 0
+Local Archaion resource references checked: 483
+Missing local resource targets: 0
+Active NeoForge references: 0
+Active Sponge/Mixin configuration/references: 0
+TODO/FIXME/placeholder/UnsupportedOperationException markers in active Java/resources: 0
+No-classpath Java syntax-level diagnostics: 0
+
+Phase 13 additions:
+- Ancient Keep entry sync, fog, color and ambience particles.
+- Last of Deepslate custom boss bar, raid sub-bar, sleeping Echo Charge tooltip and boss-music repair.
+- Event-driven/bounded network sync for ambience and boss HUD data.
+- Original Last of Deepslate turn-aware move control (0.15 rotation freedom).
+- Original eased look behavior, adapted Smash Ground 27-tick head-tracking freeze.
+- Original random Player/Iron Golem target cycling.
+- Original 1.5-block step height and no-body-push behavior.
+
+Known deliberate compatibility deferrals:
+- Exact original ActionManager attack-keyframe runtime remains replaced by native AI/attack goals.
+- LargeEntityPathNavigation/BandaidPathFinder remains deferred until real Forge compile/runtime evidence.
+
+ForgeGradle compile: NOT RUN / NOT CLAIMED.
+Test JAR: NOT YET PRODUCED.

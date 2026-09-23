@@ -1,0 +1,297 @@
+Compiled from "ACClientSetup.java"
+public class com.ratrod.archaion.ACClientSetup {
+  public com.ratrod.archaion.ACClientSetup(net.neoforged.fml.ModContainer);
+    descriptor: (Lnet/neoforged/fml/ModContainer;)V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_1
+       5: ldc           #7                  // class net/neoforged/neoforge/client/gui/IConfigScreenFactory
+       7: invokedynamic #9,  0              // InvokeDynamic #0:createScreen:()Lnet/neoforged/neoforge/client/gui/IConfigScreenFactory;
+      12: invokevirtual #13                 // Method net/neoforged/fml/ModContainer.registerExtensionPoint:(Ljava/lang/Class;Lnet/neoforged/fml/IExtensionPoint;)V
+      15: return
+
+  static void onClientSetup(net.neoforged.fml.event.lifecycle.FMLClientSetupEvent);
+    descriptor: (Lnet/neoforged/fml/event/lifecycle/FMLClientSetupEvent;)V
+    Code:
+       0: getstatic     #19                 // Field com/ratrod/archaion/registry/ACItems.ECHOS_GRACE:Lnet/neoforged/neoforge/registries/DeferredItem;
+       3: invokevirtual #25                 // Method net/neoforged/neoforge/registries/DeferredItem.get:()Ljava/lang/Object;
+       6: checkcast     #31                 // class net/minecraft/world/item/Item
+       9: ldc           #33                 // String echos_grace_pull
+      11: invokestatic  #35                 // Method com/ratrod/archaion/Archaion.prefix:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      14: new           #41                 // class com/ratrod/archaion/client/item/EchosGracePull
+      17: dup
+      18: invokespecial #43                 // Method com/ratrod/archaion/client/item/EchosGracePull."<init>":()V
+      21: invokestatic  #44                 // Method net/minecraft/client/renderer/item/ItemProperties.register:(Lnet/minecraft/world/item/Item;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/item/ItemPropertyFunction;)V
+      24: getstatic     #19                 // Field com/ratrod/archaion/registry/ACItems.ECHOS_GRACE:Lnet/neoforged/neoforge/registries/DeferredItem;
+      27: invokevirtual #25                 // Method net/neoforged/neoforge/registries/DeferredItem.get:()Ljava/lang/Object;
+      30: checkcast     #31                 // class net/minecraft/world/item/Item
+      33: ldc           #50                 // String pulling
+      35: invokestatic  #52                 // Method net/minecraft/resources/ResourceLocation.withDefaultNamespace:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      38: invokedynamic #57,  0             // InvokeDynamic #1:call:()Lnet/minecraft/client/renderer/item/ItemPropertyFunction;
+      43: invokestatic  #44                 // Method net/minecraft/client/renderer/item/ItemProperties.register:(Lnet/minecraft/world/item/Item;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/item/ItemPropertyFunction;)V
+      46: getstatic     #61                 // Field com/ratrod/archaion/registry/ACEntityTypes.LAST_OF_DEEPSLATE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      49: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      52: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+      55: getstatic     #72                 // Field com/ratrod/archaion/client/animations/LastOfDeepslateAnimations.DYING:Lnet/minecraft/client/animation/AnimationDefinition;
+      58: getstatic     #78                 // Field com/ratrod/archaion/client/animations/LastOfDeepslateAnimations.WAKING:Lnet/minecraft/client/animation/AnimationDefinition;
+      61: getstatic     #81                 // Field com/ratrod/archaion/client/animations/LastOfDeepslateAnimations.SHOOT_LAND:Lnet/minecraft/client/animation/AnimationDefinition;
+      64: getstatic     #84                 // Field com/ratrod/archaion/client/animations/LastOfDeepslateAnimations.SMASH_GROUND:Lnet/minecraft/client/animation/AnimationDefinition;
+      67: getstatic     #87                 // Field com/ratrod/archaion/client/animations/LastOfDeepslateAnimations.SPIN_SWING:Lnet/minecraft/client/animation/AnimationDefinition;
+      70: getstatic     #90                 // Field com/ratrod/archaion/client/animations/LastOfDeepslateAnimations.INTERCEPT_SHOOT:Lnet/minecraft/client/animation/AnimationDefinition;
+      73: getstatic     #93                 // Field com/ratrod/archaion/client/animations/LastOfDeepslateAnimations.ROLL:Lnet/minecraft/client/animation/AnimationDefinition;
+      76: getstatic     #96                 // Field com/ratrod/archaion/client/animations/LastOfDeepslateAnimations.SUMMON_ARCHAICS:Lnet/minecraft/client/animation/AnimationDefinition;
+      79: getstatic     #99                 // Field com/ratrod/archaion/client/animations/LastOfDeepslateAnimations.BODY_SLAM:Lnet/minecraft/client/animation/AnimationDefinition;
+      82: invokestatic  #102                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+      85: invokestatic  #108                // Method com/ratrod/archaion/client/animations/ClientAnimationRegistry.register:(Lnet/minecraft/world/entity/EntityType;Ljava/util/List;)V
+      88: getstatic     #113                // Field com/ratrod/archaion/registry/ACEntityTypes.BRAVE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      91: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      94: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+      97: getstatic     #116                // Field com/ratrod/archaion/client/animations/BraveAnimations.JUMPING:Lnet/minecraft/client/animation/AnimationDefinition;
+     100: getstatic     #121                // Field com/ratrod/archaion/client/animations/BraveAnimations.TEST:Lnet/minecraft/client/animation/AnimationDefinition;
+     103: invokestatic  #124                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+     106: invokestatic  #108                // Method com/ratrod/archaion/client/animations/ClientAnimationRegistry.register:(Lnet/minecraft/world/entity/EntityType;Ljava/util/List;)V
+     109: getstatic     #127                // Field com/ratrod/archaion/registry/ACEntityTypes.DEEPSLATE_SENTINEL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     112: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     115: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+     118: getstatic     #130                // Field com/ratrod/archaion/client/animations/DeepslateSentinelAnimations.CHARGE:Lnet/minecraft/client/animation/AnimationDefinition;
+     121: invokestatic  #135                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+     124: invokestatic  #108                // Method com/ratrod/archaion/client/animations/ClientAnimationRegistry.register:(Lnet/minecraft/world/entity/EntityType;Ljava/util/List;)V
+     127: getstatic     #138                // Field com/ratrod/archaion/registry/ACEntityTypes.GRIMORAY:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     130: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     133: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+     136: getstatic     #141                // Field com/ratrod/archaion/client/animations/GrimorayAnimations.SHOOT:Lnet/minecraft/client/animation/AnimationDefinition;
+     139: invokestatic  #135                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+     142: invokestatic  #108                // Method com/ratrod/archaion/client/animations/ClientAnimationRegistry.register:(Lnet/minecraft/world/entity/EntityType;Ljava/util/List;)V
+     145: getstatic     #146                // Field com/ratrod/archaion/registry/ACEntityTypes.HAUNTER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     148: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     151: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+     154: getstatic     #149                // Field com/ratrod/archaion/client/animations/HaunterAnimations.EXPLODE:Lnet/minecraft/client/animation/AnimationDefinition;
+     157: invokestatic  #135                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+     160: invokestatic  #108                // Method com/ratrod/archaion/client/animations/ClientAnimationRegistry.register:(Lnet/minecraft/world/entity/EntityType;Ljava/util/List;)V
+     163: return
+
+  static void onRegisterRenderers(net.neoforged.neoforge.client.event.EntityRenderersEvent$RegisterRenderers);
+    descriptor: (Lnet/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers;)V
+    Code:
+       0: aload_0
+       1: getstatic     #61                 // Field com/ratrod/archaion/registry/ACEntityTypes.LAST_OF_DEEPSLATE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       4: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+       7: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+      10: invokedynamic #154,  0            // InvokeDynamic #2:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+      15: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+      18: aload_0
+      19: getstatic     #164                // Field com/ratrod/archaion/registry/ACEntityTypes.SLATED:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      22: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      25: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+      28: invokedynamic #167,  0            // InvokeDynamic #3:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+      33: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+      36: aload_0
+      37: getstatic     #168                // Field com/ratrod/archaion/registry/ACEntityTypes.WIGHT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      40: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      43: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+      46: invokedynamic #171,  0            // InvokeDynamic #4:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+      51: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+      54: aload_0
+      55: getstatic     #172                // Field com/ratrod/archaion/registry/ACEntityTypes.ECHO_STAR:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      58: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      61: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+      64: invokedynamic #175,  0            // InvokeDynamic #5:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+      69: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+      72: aload_0
+      73: getstatic     #113                // Field com/ratrod/archaion/registry/ACEntityTypes.BRAVE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      76: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      79: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+      82: invokedynamic #176,  0            // InvokeDynamic #6:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+      87: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+      90: aload_0
+      91: getstatic     #177                // Field com/ratrod/archaion/registry/ACEntityTypes.THROWN_ECHO_MACE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      94: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      97: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+     100: invokedynamic #180,  0            // InvokeDynamic #7:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     105: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     108: aload_0
+     109: getstatic     #181                // Field com/ratrod/archaion/registry/ACEntityTypes.THROWN_IMPACT_PEARL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     112: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     115: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+     118: invokedynamic #184,  0            // InvokeDynamic #8:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     123: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     126: aload_0
+     127: getstatic     #185                // Field com/ratrod/archaion/registry/ACEntityTypes.LOD_INTERCEPT_BLAST:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     130: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     133: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+     136: invokedynamic #188,  0            // InvokeDynamic #9:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     141: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     144: aload_0
+     145: getstatic     #189                // Field com/ratrod/archaion/registry/ACEntityTypes.LOD_SLAM:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     148: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     151: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+     154: invokedynamic #192,  0            // InvokeDynamic #10:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     159: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     162: aload_0
+     163: getstatic     #193                // Field com/ratrod/archaion/registry/ACEntityTypes.LOD_FALLING_BLOCK:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     166: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     169: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+     172: invokedynamic #196,  0            // InvokeDynamic #11:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     177: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     180: aload_0
+     181: getstatic     #127                // Field com/ratrod/archaion/registry/ACEntityTypes.DEEPSLATE_SENTINEL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     184: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     187: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+     190: invokedynamic #197,  0            // InvokeDynamic #12:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     195: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     198: aload_0
+     199: getstatic     #138                // Field com/ratrod/archaion/registry/ACEntityTypes.GRIMORAY:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     202: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     205: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+     208: invokedynamic #198,  0            // InvokeDynamic #13:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     213: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     216: aload_0
+     217: getstatic     #199                // Field com/ratrod/archaion/registry/ACEntityTypes.GRIMORAY_SPELL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     220: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     223: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+     226: invokedynamic #202,  0            // InvokeDynamic #14:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     231: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     234: aload_0
+     235: getstatic     #146                // Field com/ratrod/archaion/registry/ACEntityTypes.HAUNTER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     238: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     241: checkcast     #70                 // class net/minecraft/world/entity/EntityType
+     244: invokedynamic #203,  0            // InvokeDynamic #15:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     249: invokevirtual #158                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     252: aload_0
+     253: getstatic     #204                // Field com/ratrod/archaion/registry/ACBlockEntities.HOLOGRAM:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     256: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     259: checkcast     #209                // class net/minecraft/world/level/block/entity/BlockEntityType
+     262: invokedynamic #211,  0            // InvokeDynamic #16:create:()Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider;
+     267: invokevirtual #214                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerBlockEntityRenderer:(Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider;)V
+     270: aload_0
+     271: getstatic     #218                // Field com/ratrod/archaion/api/trial/ACTrialRegistry.TRIAL_SPAWNER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     274: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     277: checkcast     #209                // class net/minecraft/world/level/block/entity/BlockEntityType
+     280: invokedynamic #223,  0            // InvokeDynamic #17:create:()Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider;
+     285: invokevirtual #214                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerBlockEntityRenderer:(Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider;)V
+     288: aload_0
+     289: getstatic     #224                // Field com/ratrod/archaion/registry/ACBlockEntities.TELEPORTER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     292: invokevirtual #67                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     295: checkcast     #209                // class net/minecraft/world/level/block/entity/BlockEntityType
+     298: invokedynamic #227,  0            // InvokeDynamic #18:create:()Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider;
+     303: invokevirtual #214                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerBlockEntityRenderer:(Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider;)V
+     306: return
+
+  static void onRegisterLayerDefinitions(net.neoforged.neoforge.client.event.EntityRenderersEvent$RegisterLayerDefinitions);
+    descriptor: (Lnet/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions;)V
+    Code:
+       0: aload_0
+       1: getstatic     #228                // Field com/ratrod/archaion/client/models/LastOfDeepslateModel.LAYER_LOCATION:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+       4: invokedynamic #234,  0            // InvokeDynamic #19:get:()Ljava/util/function/Supplier;
+       9: invokevirtual #237                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      12: aload_0
+      13: getstatic     #243                // Field com/ratrod/archaion/client/models/LastOfDeepslateModel.CHARGED_LAYER_LOCATION:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      16: invokedynamic #246,  0            // InvokeDynamic #20:get:()Ljava/util/function/Supplier;
+      21: invokevirtual #237                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      24: aload_0
+      25: getstatic     #247                // Field com/ratrod/archaion/client/models/BraveModel.LAYER_LOCATION:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      28: invokedynamic #250,  0            // InvokeDynamic #21:get:()Ljava/util/function/Supplier;
+      33: invokevirtual #237                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      36: aload_0
+      37: getstatic     #251                // Field com/ratrod/archaion/client/models/BraveModel.CHARGED_LAYER_LOCATION:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      40: invokedynamic #252,  0            // InvokeDynamic #22:get:()Ljava/util/function/Supplier;
+      45: invokevirtual #237                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      48: aload_0
+      49: getstatic     #253                // Field com/ratrod/archaion/client/models/DeepslateSentinelModel.LAYER_LOCATION:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      52: invokedynamic #256,  0            // InvokeDynamic #23:get:()Ljava/util/function/Supplier;
+      57: invokevirtual #237                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      60: aload_0
+      61: getstatic     #257                // Field com/ratrod/archaion/client/models/GrimorayModel.LAYER_LOCATION:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      64: invokedynamic #260,  0            // InvokeDynamic #24:get:()Ljava/util/function/Supplier;
+      69: invokevirtual #237                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      72: aload_0
+      73: getstatic     #261                // Field com/ratrod/archaion/client/models/HaunterModel.LAYER_LOCATION:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      76: invokedynamic #264,  0            // InvokeDynamic #25:get:()Ljava/util/function/Supplier;
+      81: invokevirtual #237                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      84: aload_0
+      85: getstatic     #265                // Field com/ratrod/archaion/client/models/HaunterModel.CHARGED_LAYER_LOCATION:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      88: invokedynamic #266,  0            // InvokeDynamic #26:get:()Ljava/util/function/Supplier;
+      93: invokevirtual #237                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      96: return
+
+  static void onRegisterGuiLayers(net.neoforged.neoforge.client.event.RegisterGuiLayersEvent);
+    descriptor: (Lnet/neoforged/neoforge/client/event/RegisterGuiLayersEvent;)V
+    Code:
+       0: aload_0
+       1: ldc_w         #267                // String last_of_deepslate_tooltip
+       4: invokestatic  #35                 // Method com/ratrod/archaion/Archaion.prefix:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+       7: invokedynamic #269,  0            // InvokeDynamic #27:render:()Lnet/minecraft/client/gui/LayeredDraw$Layer;
+      12: invokevirtual #273                // Method net/neoforged/neoforge/client/event/RegisterGuiLayersEvent.registerAboveAll:(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/gui/LayeredDraw$Layer;)V
+      15: return
+
+  static void onRegisterTooltipComponents(net.neoforged.neoforge.client.event.RegisterClientTooltipComponentFactoriesEvent);
+    descriptor: (Lnet/neoforged/neoforge/client/event/RegisterClientTooltipComponentFactoriesEvent;)V
+    Code:
+       0: aload_0
+       1: ldc_w         #279                // class com/ratrod/archaion/client/misc/EchoChargeRequiredTooltip
+       4: invokedynamic #281,  0            // InvokeDynamic #28:apply:()Ljava/util/function/Function;
+       9: invokevirtual #285                // Method net/neoforged/neoforge/client/event/RegisterClientTooltipComponentFactoriesEvent.register:(Ljava/lang/Class;Ljava/util/function/Function;)V
+      12: return
+
+  private static net.minecraft.client.model.geom.builders.LayerDefinition lambda$onRegisterLayerDefinitions$5();
+    descriptor: ()Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+    Code:
+       0: new           #290                // class net/minecraft/client/model/geom/builders/CubeDeformation
+       3: dup
+       4: fconst_2
+       5: invokespecial #292                // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+       8: invokestatic  #295                // Method com/ratrod/archaion/client/models/HaunterModel.createBodyLayer:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+      11: areturn
+
+  private static net.minecraft.client.model.geom.builders.LayerDefinition lambda$onRegisterLayerDefinitions$4();
+    descriptor: ()Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+    Code:
+       0: new           #290                // class net/minecraft/client/model/geom/builders/CubeDeformation
+       3: dup
+       4: fconst_2
+       5: invokespecial #292                // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+       8: invokestatic  #299                // Method com/ratrod/archaion/client/models/BraveModel.createBodyLayer:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+      11: areturn
+
+  private static net.minecraft.client.model.geom.builders.LayerDefinition lambda$onRegisterLayerDefinitions$3();
+    descriptor: ()Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+    Code:
+       0: getstatic     #300                // Field net/minecraft/client/model/geom/builders/CubeDeformation.NONE:Lnet/minecraft/client/model/geom/builders/CubeDeformation;
+       3: invokestatic  #299                // Method com/ratrod/archaion/client/models/BraveModel.createBodyLayer:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+       6: areturn
+
+  private static net.minecraft.client.model.geom.builders.LayerDefinition lambda$onRegisterLayerDefinitions$2();
+    descriptor: ()Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+    Code:
+       0: new           #290                // class net/minecraft/client/model/geom/builders/CubeDeformation
+       3: dup
+       4: fconst_2
+       5: invokespecial #292                // Method net/minecraft/client/model/geom/builders/CubeDeformation."<init>":(F)V
+       8: invokestatic  #304                // Method com/ratrod/archaion/client/models/LastOfDeepslateModel.createBodyLayer:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+      11: areturn
+
+  private static net.minecraft.client.model.geom.builders.LayerDefinition lambda$onRegisterLayerDefinitions$1();
+    descriptor: ()Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+    Code:
+       0: getstatic     #300                // Field net/minecraft/client/model/geom/builders/CubeDeformation.NONE:Lnet/minecraft/client/model/geom/builders/CubeDeformation;
+       3: invokestatic  #304                // Method com/ratrod/archaion/client/models/LastOfDeepslateModel.createBodyLayer:(Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+       6: areturn
+
+  private static float lambda$onClientSetup$0(net.minecraft.world.item.ItemStack, net.minecraft.client.multiplayer.ClientLevel, net.minecraft.world.entity.LivingEntity, int);
+    descriptor: (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/entity/LivingEntity;I)F
+    Code:
+       0: aload_2
+       1: ifnull        23
+       4: aload_2
+       5: invokevirtual #305                // Method net/minecraft/world/entity/LivingEntity.isUsingItem:()Z
+       8: ifeq          23
+      11: aload_2
+      12: invokevirtual #311                // Method net/minecraft/world/entity/LivingEntity.getUseItem:()Lnet/minecraft/world/item/ItemStack;
+      15: aload_0
+      16: if_acmpne     23
+      19: fconst_1
+      20: goto          24
+      23: fconst_0
+      24: freturn
+}

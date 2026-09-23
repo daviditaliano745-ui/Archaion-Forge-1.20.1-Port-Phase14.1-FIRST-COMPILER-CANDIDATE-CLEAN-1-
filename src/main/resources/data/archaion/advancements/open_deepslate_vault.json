@@ -1,0 +1,33 @@
+{
+  "parent": "archaion:obtain_echo_key",
+  "criteria": {
+    "has_echo_charge": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "archaion:echo_charge"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.open_deepslate_vault.description"
+    },
+    "icon": {
+      "item": "archaion:echo_charge"
+    },
+    "title": {
+      "translate": "advancements.open_deepslate_vault.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_echo_charge"
+    ]
+  ]
+}

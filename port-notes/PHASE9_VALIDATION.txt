@@ -1,0 +1,14 @@
+Phase 9 static validation
+=========================
+Active Java files: 76
+Active JSON files: 157
+JSON parse errors: 0
+Obvious NeoForge/1.21 active Java symbols checked: 0
+Missing Phase 9 renderer textures: 0
+Missing LOD boss-theme sound definitions/assets: 0
+Unsafe Zombie/Skeleton renderer casts: 0
+Java delimiter structural errors: 0
+No-classpath javac syntax diagnostics: 0
+
+Full ForgeGradle compile: NOT RUN / NOT CLAIMED.
+Reason: no cached ForgeGradle/Minecraft classpath in container and outbound DNS is unavailable.

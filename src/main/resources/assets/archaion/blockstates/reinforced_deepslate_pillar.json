@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "archaion:block/reinforced_deepslate_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "archaion:block/reinforced_deepslate_pillar"
+    },
+    "axis=z": {
+      "model": "archaion:block/reinforced_deepslate_pillar",
+      "x": 90
+    }
+  }
+}

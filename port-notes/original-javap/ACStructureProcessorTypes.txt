@@ -1,0 +1,41 @@
+Compiled from "ACStructureProcessorTypes.java"
+public class com.ratrod.archaion.registry.ACStructureProcessorTypes {
+  public static final net.neoforged.neoforge.registries.DeferredRegister<net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType<?>> STRUCTURE_PROCESSOR;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredRegister;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType<?>, net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType<com.ratrod.archaion.worldgen.processors.DeepslateVaultProcessor>> DEEPSLATE_VAULT;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public com.ratrod.archaion.registry.ACStructureProcessorTypes();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType lambda$static$1();
+    descriptor: ()Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureProcessorType;
+    Code:
+       0: invokedynamic #7,  0              // InvokeDynamic #0:codec:()Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureProcessorType;
+       5: areturn
+
+  private static com.mojang.serialization.MapCodec lambda$static$0();
+    descriptor: ()Lcom/mojang/serialization/MapCodec;
+    Code:
+       0: getstatic     #11                 // Field com/ratrod/archaion/worldgen/processors/DeepslateVaultProcessor.CODEC:Lcom/mojang/serialization/MapCodec;
+       3: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: getstatic     #17                 // Field net/minecraft/core/registries/Registries.STRUCTURE_PROCESSOR:Lnet/minecraft/resources/ResourceKey;
+       3: ldc           #25                 // String archaion
+       5: invokestatic  #27                 // Method net/neoforged/neoforge/registries/DeferredRegister.create:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister;
+       8: putstatic     #33                 // Field STRUCTURE_PROCESSOR:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      11: getstatic     #33                 // Field STRUCTURE_PROCESSOR:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      14: ldc           #38                 // String deepslate_vault
+      16: invokedynamic #40,  0             // InvokeDynamic #1:get:()Ljava/util/function/Supplier;
+      21: invokevirtual #44                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      24: putstatic     #48                 // Field DEEPSLATE_VAULT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      27: return
+}

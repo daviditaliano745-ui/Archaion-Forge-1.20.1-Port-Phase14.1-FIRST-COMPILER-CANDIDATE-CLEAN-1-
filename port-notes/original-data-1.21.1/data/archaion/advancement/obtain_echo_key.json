@@ -1,0 +1,33 @@
+{
+  "parent": "archaion:enter_ancient_keep",
+  "criteria": {
+    "has_echo_key": {
+      "conditions": {
+        "items": [
+          {
+            "items": "archaion:echo_key"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.obtain_echo_key.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "archaion:echo_key"
+    },
+    "title": {
+      "translate": "advancements.obtain_echo_key.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_echo_key"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

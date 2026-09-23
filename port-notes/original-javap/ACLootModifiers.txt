@@ -1,0 +1,35 @@
+Compiled from "ACLootModifiers.java"
+public class com.ratrod.archaion.registry.ACLootModifiers {
+  public static final net.neoforged.neoforge.registries.DeferredRegister<com.mojang.serialization.MapCodec<? extends net.neoforged.neoforge.common.loot.IGlobalLootModifier>> GLOBAL_LOOT_MODIFIER_SERIALIZERS;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredRegister;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<com.mojang.serialization.MapCodec<? extends net.neoforged.neoforge.common.loot.IGlobalLootModifier>, com.mojang.serialization.MapCodec<com.ratrod.archaion.loot.AddLootTableModifier>> ADD_LOOT_TABLE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public com.ratrod.archaion.registry.ACLootModifiers();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static com.mojang.serialization.MapCodec lambda$static$0();
+    descriptor: ()Lcom/mojang/serialization/MapCodec;
+    Code:
+       0: getstatic     #7                  // Field com/ratrod/archaion/loot/AddLootTableModifier.CODEC:Lcom/mojang/serialization/MapCodec;
+       3: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: getstatic     #13                 // Field net/neoforged/neoforge/registries/NeoForgeRegistries$Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS:Lnet/minecraft/resources/ResourceKey;
+       3: ldc           #21                 // String archaion
+       5: invokestatic  #23                 // Method net/neoforged/neoforge/registries/DeferredRegister.create:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister;
+       8: putstatic     #29                 // Field GLOBAL_LOOT_MODIFIER_SERIALIZERS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      11: getstatic     #29                 // Field GLOBAL_LOOT_MODIFIER_SERIALIZERS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      14: ldc           #34                 // String add_loot_table
+      16: invokedynamic #36,  0             // InvokeDynamic #0:get:()Ljava/util/function/Supplier;
+      21: invokevirtual #40                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      24: putstatic     #44                 // Field ADD_LOOT_TABLE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      27: return
+}

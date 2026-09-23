@@ -1,0 +1,39 @@
+{
+  "parent": "archaion:open_deepslate_vault",
+  "criteria": {
+    "has_echos_grace": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "archaion:echos_grace"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.craft_echos_grace.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "item": "archaion:echos_grace"
+    },
+    "title": {
+      "translate": "advancements.craft_echos_grace.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_echos_grace"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "archaion:echos_grace_upgrade_smithing"
+    ]
+  }
+}

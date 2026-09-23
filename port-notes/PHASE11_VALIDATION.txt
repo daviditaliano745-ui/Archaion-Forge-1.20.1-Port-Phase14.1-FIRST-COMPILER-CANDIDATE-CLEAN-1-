@@ -1,0 +1,18 @@
+Phase 11 cumulative static validation
+=====================================
+Active Java files: 81
+JSON / pack metadata parsed: 158
+JSON parse errors: 0
+Converted Ancient Keep NBT templates: 20
+NBT structural read errors: 0
+Active NeoForge references: 0
+Active Sponge/Mixin configuration: none
+No-classpath Java 17 syntax-level diagnostics: 0
+
+Phase 11 exact-parity checks from original 1.21.1 bytecode:
+- Thrown Echo Mace: 2x scale, yaw-90 alignment, -30 degrees/tick spin.
+- LOD falling block: render carried block state, +20 degrees/tick X rotation.
+- Echo Star / Grimoray Spell / LOD Intercept Blast / LOD Slam: shouldRender=false.
+- Echo's Grace: projectile stacks are created internally; no player ammo consumption.
+
+Full ForgeGradle compile: NOT RUN / NOT CLAIMED.

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "color=blue": {
+      "model": "archaion:block/deepslate_teleporter"
+    },
+    "color=cyan": {
+      "model": "archaion:block/deepslate_teleporter"
+    },
+    "color=green": {
+      "model": "archaion:block/deepslate_teleporter"
+    },
+    "color=orange": {
+      "model": "archaion:block/deepslate_teleporter"
+    },
+    "color=purple": {
+      "model": "archaion:block/deepslate_teleporter"
+    },
+    "color=red": {
+      "model": "archaion:block/deepslate_teleporter"
+    },
+    "color=white": {
+      "model": "archaion:block/deepslate_teleporter"
+    },
+    "color=yellow": {
+      "model": "archaion:block/deepslate_teleporter"
+    }
+  }
+}

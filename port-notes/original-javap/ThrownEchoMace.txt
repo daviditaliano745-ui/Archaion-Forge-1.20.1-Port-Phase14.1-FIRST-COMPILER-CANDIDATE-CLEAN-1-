@@ -1,0 +1,533 @@
+Compiled from "ThrownEchoMace.java"
+public class com.ratrod.archaion.entities.projectile.ThrownEchoMace extends net.minecraft.world.entity.projectile.ThrowableProjectile {
+  private static final net.minecraft.network.syncher.EntityDataAccessor<net.minecraft.world.item.ItemStack> DATA_MACE_STACK;
+
+  public int bounces;
+
+  public com.ratrod.archaion.entities.projectile.ThrownEchoMace(net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.projectile.ThrowableProjectile>, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #1                  // Method net/minecraft/world/entity/projectile/ThrowableProjectile."<init>":(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+       6: aload_0
+       7: iconst_0
+       8: putfield      #7                  // Field bounces:I
+      11: return
+
+  public com.ratrod.archaion.entities.projectile.ThrownEchoMace(net.minecraft.world.level.Level, net.minecraft.world.entity.LivingEntity, net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_0
+       1: getstatic     #13                 // Field com/ratrod/archaion/registry/ACEntityTypes.THROWN_ECHO_MACE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       4: invokevirtual #19                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+       7: checkcast     #25                 // class net/minecraft/world/entity/EntityType
+      10: aload_2
+      11: invokevirtual #27                 // Method net/minecraft/world/entity/LivingEntity.getX:()D
+      14: aload_2
+      15: invokevirtual #33                 // Method net/minecraft/world/entity/LivingEntity.getEyeY:()D
+      18: ldc2_w        #36                 // double 0.10000000149011612d
+      21: dsub
+      22: aload_2
+      23: invokevirtual #38                 // Method net/minecraft/world/entity/LivingEntity.getZ:()D
+      26: aload_1
+      27: invokespecial #41                 // Method net/minecraft/world/entity/projectile/ThrowableProjectile."<init>":(Lnet/minecraft/world/entity/EntityType;DDDLnet/minecraft/world/level/Level;)V
+      30: aload_0
+      31: iconst_0
+      32: putfield      #7                  // Field bounces:I
+      35: aload_0
+      36: aload_2
+      37: invokevirtual #44                 // Method setOwner:(Lnet/minecraft/world/entity/Entity;)V
+      40: aload_0
+      41: getfield      #48                 // Field entityData:Lnet/minecraft/network/syncher/SynchedEntityData;
+      44: getstatic     #52                 // Field DATA_MACE_STACK:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      47: aload_3
+      48: iconst_1
+      49: invokevirtual #56                 // Method net/minecraft/world/item/ItemStack.copyWithCount:(I)Lnet/minecraft/world/item/ItemStack;
+      52: invokevirtual #62                 // Method net/minecraft/network/syncher/SynchedEntityData.set:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      55: return
+
+  protected void defineSynchedData(net.minecraft.network.syncher.SynchedEntityData$Builder);
+    Code:
+       0: aload_1
+       1: getstatic     #52                 // Field DATA_MACE_STACK:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       4: getstatic     #68                 // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+       7: invokevirtual #72                 // Method net/minecraft/network/syncher/SynchedEntityData$Builder.define:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)Lnet/minecraft/network/syncher/SynchedEntityData$Builder;
+      10: pop
+      11: return
+
+  public net.minecraft.world.item.ItemStack getThrownStack();
+    Code:
+       0: aload_0
+       1: getfield      #48                 // Field entityData:Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: getstatic     #52                 // Field DATA_MACE_STACK:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       7: invokevirtual #78                 // Method net/minecraft/network/syncher/SynchedEntityData.get:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+      10: checkcast     #57                 // class net/minecraft/world/item/ItemStack
+      13: areturn
+
+  public net.minecraft.world.item.ItemStack getWeaponItem();
+    Code:
+       0: aload_0
+       1: invokevirtual #81                 // Method getThrownStack:()Lnet/minecraft/world/item/ItemStack;
+       4: areturn
+
+  public void tick();
+    Code:
+       0: aload_0
+       1: invokespecial #85                 // Method net/minecraft/world/entity/projectile/ThrowableProjectile.tick:()V
+       4: aload_0
+       5: invokevirtual #89                 // Method level:()Lnet/minecraft/world/level/Level;
+       8: invokevirtual #93                 // Method net/minecraft/world/level/Level.isClientSide:()Z
+      11: ifeq          48
+      14: aload_0
+      15: getfield      #99                 // Field tickCount:I
+      18: iconst_2
+      19: irem
+      20: ifne          48
+      23: aload_0
+      24: invokevirtual #89                 // Method level:()Lnet/minecraft/world/level/Level;
+      27: getstatic     #102                // Field net/minecraft/core/particles/ParticleTypes.SCULK_SOUL:Lnet/minecraft/core/particles/SimpleParticleType;
+      30: aload_0
+      31: invokevirtual #108                // Method getX:()D
+      34: aload_0
+      35: invokevirtual #109                // Method getY:()D
+      38: aload_0
+      39: invokevirtual #112                // Method getZ:()D
+      42: dconst_0
+      43: dconst_0
+      44: dconst_0
+      45: invokevirtual #113                // Method net/minecraft/world/level/Level.addParticle:(Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
+      48: return
+
+  protected void onHitEntity(net.minecraft.world.phys.EntityHitResult);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #117                // Method net/minecraft/world/entity/projectile/ThrowableProjectile.onHitEntity:(Lnet/minecraft/world/phys/EntityHitResult;)V
+       5: aload_1
+       6: invokevirtual #121                // Method net/minecraft/world/phys/EntityHitResult.getEntity:()Lnet/minecraft/world/entity/Entity;
+       9: astore_2
+      10: aload_0
+      11: invokevirtual #127                // Method getOwner:()Lnet/minecraft/world/entity/Entity;
+      14: astore_3
+      15: aload_0
+      16: invokevirtual #130                // Method damageSources:()Lnet/minecraft/world/damagesource/DamageSources;
+      19: aload_0
+      20: aload_3
+      21: ifnonnull     28
+      24: aload_0
+      25: goto          29
+      28: aload_3
+      29: invokevirtual #134                // Method net/minecraft/world/damagesource/DamageSources.thrown:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/world/damagesource/DamageSource;
+      32: astore        4
+      34: aload_0
+      35: invokevirtual #89                 // Method level:()Lnet/minecraft/world/level/Level;
+      38: astore        6
+      40: aload         6
+      42: instanceof    #140                // class net/minecraft/server/level/ServerLevel
+      45: ifeq          255
+      48: aload         6
+      50: checkcast     #140                // class net/minecraft/server/level/ServerLevel
+      53: astore        5
+      55: ldc           #142                // float 8.0f
+      57: fstore        6
+      59: fload         6
+      61: aload_0
+      62: getfield      #99                 // Field tickCount:I
+      65: i2f
+      66: ldc           #143                // float 0.5f
+      68: fmul
+      69: fadd
+      70: fstore        6
+      72: aload         5
+      74: aload_0
+      75: invokevirtual #81                 // Method getThrownStack:()Lnet/minecraft/world/item/ItemStack;
+      78: aload_2
+      79: aload         4
+      81: fload         6
+      83: invokestatic  #144                // Method net/minecraft/world/item/enchantment/EnchantmentHelper.modifyFallBasedDamage:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/damagesource/DamageSource;F)F
+      86: fstore        6
+      88: aload_2
+      89: aload         4
+      91: fload         6
+      93: invokevirtual #150                // Method net/minecraft/world/entity/Entity.hurt:(Lnet/minecraft/world/damagesource/DamageSource;F)Z
+      96: ifeq          209
+      99: aload_2
+     100: instanceof    #28                 // class net/minecraft/world/entity/LivingEntity
+     103: ifeq          144
+     106: aload_2
+     107: checkcast     #28                 // class net/minecraft/world/entity/LivingEntity
+     110: astore        7
+     112: aload_0
+     113: invokevirtual #156                // Method getDeltaMovement:()Lnet/minecraft/world/phys/Vec3;
+     116: astore        8
+     118: aload         7
+     120: aload         8
+     122: getfield      #160                // Field net/minecraft/world/phys/Vec3.x:D
+     125: ldc2_w        #166                // double 0.4d
+     128: dmul
+     129: ldc2_w        #168                // double 0.3d
+     132: aload         8
+     134: getfield      #170                // Field net/minecraft/world/phys/Vec3.z:D
+     137: ldc2_w        #166                // double 0.4d
+     140: dmul
+     141: invokevirtual #173                // Method net/minecraft/world/entity/LivingEntity.push:(DDD)V
+     144: aload         5
+     146: aload_2
+     147: aload         4
+     149: aload_0
+     150: invokevirtual #177                // Method withoutWindBurst:()Lnet/minecraft/world/item/ItemStack;
+     153: invokestatic  #180                // Method net/minecraft/world/item/enchantment/EnchantmentHelper.doPostAttackEffectsWithItemSource:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/world/item/ItemStack;)V
+     156: aload_0
+     157: invokevirtual #89                 // Method level:()Lnet/minecraft/world/level/Level;
+     160: aconst_null
+     161: aload_0
+     162: invokevirtual #108                // Method getX:()D
+     165: aload_0
+     166: invokevirtual #109                // Method getY:()D
+     169: aload_0
+     170: invokevirtual #112                // Method getZ:()D
+     173: getstatic     #184                // Field net/minecraft/sounds/SoundEvents.MACE_SMASH_AIR:Lnet/minecraft/sounds/SoundEvent;
+     176: getstatic     #190                // Field net/minecraft/sounds/SoundSource.PLAYERS:Lnet/minecraft/sounds/SoundSource;
+     179: fconst_2
+     180: ldc           #196                // float 1.2f
+     182: invokevirtual #197                // Method net/minecraft/world/level/Level.playSound:(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+     185: aload_0
+     186: aload         5
+     188: aload_2
+     189: invokevirtual #201                // Method net/minecraft/world/entity/Entity.getOnPos:()Lnet/minecraft/core/BlockPos;
+     192: sipush        550
+     195: aload_2
+     196: invokevirtual #205                // Method spawnSmashEffect:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;ILnet/minecraft/world/entity/Entity;)V
+     199: aload_0
+     200: dconst_0
+     201: dconst_1
+     202: dconst_0
+     203: invokevirtual #209                // Method setDeltaMovement:(DDD)V
+     206: goto          255
+     209: aload_0
+     210: invokevirtual #89                 // Method level:()Lnet/minecraft/world/level/Level;
+     213: aconst_null
+     214: aload_0
+     215: invokevirtual #108                // Method getX:()D
+     218: aload_0
+     219: invokevirtual #109                // Method getY:()D
+     222: aload_0
+     223: invokevirtual #112                // Method getZ:()D
+     226: getstatic     #212                // Field net/minecraft/sounds/SoundEvents.MACE_SMASH_GROUND:Lnet/minecraft/sounds/SoundEvent;
+     229: getstatic     #190                // Field net/minecraft/sounds/SoundSource.PLAYERS:Lnet/minecraft/sounds/SoundSource;
+     232: fconst_2
+     233: fconst_1
+     234: invokevirtual #197                // Method net/minecraft/world/level/Level.playSound:(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+     237: aload_0
+     238: aload         5
+     240: aload_2
+     241: invokevirtual #201                // Method net/minecraft/world/entity/Entity.getOnPos:()Lnet/minecraft/core/BlockPos;
+     244: sipush        550
+     247: aconst_null
+     248: invokevirtual #205                // Method spawnSmashEffect:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;ILnet/minecraft/world/entity/Entity;)V
+     251: aload_0
+     252: invokevirtual #215                // Method discard:()V
+     255: return
+
+  public void baseTick();
+    Code:
+       0: aload_0
+       1: invokespecial #218                // Method net/minecraft/world/entity/projectile/ThrowableProjectile.baseTick:()V
+       4: aload_0
+       5: aload_0
+       6: getfield      #99                 // Field tickCount:I
+       9: i2f
+      10: putfield      #221                // Field fallDistance:F
+      13: return
+
+  protected void onHitBlock(net.minecraft.world.phys.BlockHitResult);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #225                // Method net/minecraft/world/entity/projectile/ThrowableProjectile.onHitBlock:(Lnet/minecraft/world/phys/BlockHitResult;)V
+       5: aload_0
+       6: invokevirtual #89                 // Method level:()Lnet/minecraft/world/level/Level;
+       9: astore_3
+      10: aload_3
+      11: instanceof    #140                // class net/minecraft/server/level/ServerLevel
+      14: ifeq          126
+      17: aload_3
+      18: checkcast     #140                // class net/minecraft/server/level/ServerLevel
+      21: astore_2
+      22: aload_0
+      23: invokevirtual #89                 // Method level:()Lnet/minecraft/world/level/Level;
+      26: aconst_null
+      27: aload_0
+      28: invokevirtual #108                // Method getX:()D
+      31: aload_0
+      32: invokevirtual #109                // Method getY:()D
+      35: aload_0
+      36: invokevirtual #112                // Method getZ:()D
+      39: getstatic     #212                // Field net/minecraft/sounds/SoundEvents.MACE_SMASH_GROUND:Lnet/minecraft/sounds/SoundEvent;
+      42: getstatic     #190                // Field net/minecraft/sounds/SoundSource.PLAYERS:Lnet/minecraft/sounds/SoundSource;
+      45: fconst_2
+      46: fconst_1
+      47: invokevirtual #197                // Method net/minecraft/world/level/Level.playSound:(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+      50: aload_0
+      51: aload_2
+      52: aload_1
+      53: invokevirtual #229                // Method net/minecraft/world/phys/BlockHitResult.getBlockPos:()Lnet/minecraft/core/BlockPos;
+      56: sipush        550
+      59: aconst_null
+      60: invokevirtual #205                // Method spawnSmashEffect:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;ILnet/minecraft/world/entity/Entity;)V
+      63: aload_0
+      64: invokevirtual #156                // Method getDeltaMovement:()Lnet/minecraft/world/phys/Vec3;
+      67: astore_3
+      68: aload_1
+      69: invokevirtual #234                // Method net/minecraft/world/phys/BlockHitResult.getDirection:()Lnet/minecraft/core/Direction;
+      72: invokevirtual #238                // Method net/minecraft/core/Direction.getNormal:()Lnet/minecraft/core/Vec3i;
+      75: invokestatic  #244                // Method net/minecraft/world/phys/Vec3.atLowerCornerOf:(Lnet/minecraft/core/Vec3i;)Lnet/minecraft/world/phys/Vec3;
+      78: astore        4
+      80: aload_3
+      81: aload         4
+      83: invokevirtual #248                // Method net/minecraft/world/phys/Vec3.dot:(Lnet/minecraft/world/phys/Vec3;)D
+      86: dstore        5
+      88: aload_0
+      89: aload_3
+      90: aload         4
+      92: ldc2_w        #252                // double 1.75d
+      95: dload         5
+      97: dmul
+      98: invokevirtual #254                // Method net/minecraft/world/phys/Vec3.scale:(D)Lnet/minecraft/world/phys/Vec3;
+     101: invokevirtual #258                // Method net/minecraft/world/phys/Vec3.subtract:(Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
+     104: invokevirtual #262                // Method setDeltaMovement:(Lnet/minecraft/world/phys/Vec3;)V
+     107: aload_0
+     108: aload_0
+     109: invokevirtual #265                // Method position:()Lnet/minecraft/world/phys/Vec3;
+     112: aload         4
+     114: ldc2_w        #268                // double 0.05d
+     117: invokevirtual #254                // Method net/minecraft/world/phys/Vec3.scale:(D)Lnet/minecraft/world/phys/Vec3;
+     120: invokevirtual #270                // Method net/minecraft/world/phys/Vec3.add:(Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
+     123: invokevirtual #273                // Method setPos:(Lnet/minecraft/world/phys/Vec3;)V
+     126: return
+
+  private void spawnSmashEffect(net.minecraft.server.level.ServerLevel, net.minecraft.core.BlockPos, int, net.minecraft.world.entity.Entity);
+    Code:
+       0: aload_1
+       1: sipush        2013
+       4: aload_2
+       5: iload_3
+       6: invokevirtual #276                // Method net/minecraft/server/level/ServerLevel.levelEvent:(ILnet/minecraft/core/BlockPos;I)V
+       9: aload_0
+      10: aload_1
+      11: aload_2
+      12: aload         4
+      14: invokevirtual #280                // Method applyWindBurst:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/Entity;)V
+      17: aload_0
+      18: dup
+      19: getfield      #7                  // Field bounces:I
+      22: dup_x1
+      23: iconst_1
+      24: iadd
+      25: putfield      #7                  // Field bounces:I
+      28: iconst_3
+      29: if_icmple     36
+      32: aload_0
+      33: invokevirtual #215                // Method discard:()V
+      36: return
+
+  private net.minecraft.world.item.ItemStack withoutWindBurst();
+    Code:
+       0: aload_0
+       1: invokevirtual #81                 // Method getThrownStack:()Lnet/minecraft/world/item/ItemStack;
+       4: astore_1
+       5: aload_0
+       6: invokevirtual #89                 // Method level:()Lnet/minecraft/world/level/Level;
+       9: invokevirtual #284                // Method net/minecraft/world/level/Level.registryAccess:()Lnet/minecraft/core/RegistryAccess;
+      12: getstatic     #288                // Field net/minecraft/core/registries/Registries.ENCHANTMENT:Lnet/minecraft/resources/ResourceKey;
+      15: invokeinterface #294,  2          // InterfaceMethod net/minecraft/core/RegistryAccess.lookupOrThrow:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/HolderLookup$RegistryLookup;
+      20: getstatic     #300                // Field net/minecraft/world/item/enchantment/Enchantments.WIND_BURST:Lnet/minecraft/resources/ResourceKey;
+      23: invokeinterface #305,  2          // InterfaceMethod net/minecraft/core/HolderLookup$RegistryLookup.getOrThrow:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;
+      28: astore_2
+      29: aload_1
+      30: getstatic     #311                // Field net/minecraft/core/component/DataComponents.ENCHANTMENTS:Lnet/minecraft/core/component/DataComponentType;
+      33: getstatic     #317                // Field net/minecraft/world/item/enchantment/ItemEnchantments.EMPTY:Lnet/minecraft/world/item/enchantment/ItemEnchantments;
+      36: invokevirtual #322                // Method net/minecraft/world/item/ItemStack.getOrDefault:(Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;)Ljava/lang/Object;
+      39: checkcast     #318                // class net/minecraft/world/item/enchantment/ItemEnchantments
+      42: astore_3
+      43: aload_3
+      44: aload_2
+      45: invokevirtual #326                // Method net/minecraft/world/item/enchantment/ItemEnchantments.getLevel:(Lnet/minecraft/core/Holder;)I
+      48: ifgt          53
+      51: aload_1
+      52: areturn
+      53: aload_1
+      54: invokevirtual #330                // Method net/minecraft/world/item/ItemStack.copy:()Lnet/minecraft/world/item/ItemStack;
+      57: astore        4
+      59: new           #333                // class net/minecraft/world/item/enchantment/ItemEnchantments$Mutable
+      62: dup
+      63: aload_3
+      64: invokespecial #335                // Method net/minecraft/world/item/enchantment/ItemEnchantments$Mutable."<init>":(Lnet/minecraft/world/item/enchantment/ItemEnchantments;)V
+      67: astore        5
+      69: aload         5
+      71: aload_2
+      72: iconst_0
+      73: invokevirtual #338                // Method net/minecraft/world/item/enchantment/ItemEnchantments$Mutable.set:(Lnet/minecraft/core/Holder;I)V
+      76: aload         4
+      78: getstatic     #311                // Field net/minecraft/core/component/DataComponents.ENCHANTMENTS:Lnet/minecraft/core/component/DataComponentType;
+      81: aload         5
+      83: invokevirtual #341                // Method net/minecraft/world/item/enchantment/ItemEnchantments$Mutable.toImmutable:()Lnet/minecraft/world/item/enchantment/ItemEnchantments;
+      86: invokevirtual #345                // Method net/minecraft/world/item/ItemStack.set:(Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;)Ljava/lang/Object;
+      89: pop
+      90: aload         4
+      92: areturn
+
+  private void applyWindBurst(net.minecraft.server.level.ServerLevel, net.minecraft.core.BlockPos, net.minecraft.world.entity.Entity);
+    Code:
+       0: aload_0
+       1: invokevirtual #81                 // Method getThrownStack:()Lnet/minecraft/world/item/ItemStack;
+       4: astore        4
+       6: aload_1
+       7: invokevirtual #347                // Method net/minecraft/server/level/ServerLevel.registryAccess:()Lnet/minecraft/core/RegistryAccess;
+      10: getstatic     #288                // Field net/minecraft/core/registries/Registries.ENCHANTMENT:Lnet/minecraft/resources/ResourceKey;
+      13: invokeinterface #294,  2          // InterfaceMethod net/minecraft/core/RegistryAccess.lookupOrThrow:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/HolderLookup$RegistryLookup;
+      18: getstatic     #300                // Field net/minecraft/world/item/enchantment/Enchantments.WIND_BURST:Lnet/minecraft/resources/ResourceKey;
+      21: invokeinterface #305,  2          // InterfaceMethod net/minecraft/core/HolderLookup$RegistryLookup.getOrThrow:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;
+      26: astore        5
+      28: aload         4
+      30: getstatic     #311                // Field net/minecraft/core/component/DataComponents.ENCHANTMENTS:Lnet/minecraft/core/component/DataComponentType;
+      33: getstatic     #317                // Field net/minecraft/world/item/enchantment/ItemEnchantments.EMPTY:Lnet/minecraft/world/item/enchantment/ItemEnchantments;
+      36: invokevirtual #322                // Method net/minecraft/world/item/ItemStack.getOrDefault:(Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;)Ljava/lang/Object;
+      39: checkcast     #318                // class net/minecraft/world/item/enchantment/ItemEnchantments
+      42: astore        6
+      44: aload         6
+      46: aload         5
+      48: invokevirtual #326                // Method net/minecraft/world/item/enchantment/ItemEnchantments.getLevel:(Lnet/minecraft/core/Holder;)I
+      51: istore        7
+      53: iload         7
+      55: ifgt          59
+      58: return
+      59: aload_0
+      60: invokevirtual #127                // Method getOwner:()Lnet/minecraft/world/entity/Entity;
+      63: astore        8
+      65: aload_3
+      66: ifnull        76
+      69: aload_3
+      70: invokevirtual #348                // Method net/minecraft/world/entity/Entity.position:()Lnet/minecraft/world/phys/Vec3;
+      73: goto          80
+      76: aload_2
+      77: invokevirtual #349                // Method net/minecraft/core/BlockPos.getCenter:()Lnet/minecraft/world/phys/Vec3;
+      80: astore        9
+      82: aconst_null
+      83: astore        10
+      85: aload         5
+      87: invokeinterface #354,  1          // InterfaceMethod net/minecraft/core/Holder.value:()Ljava/lang/Object;
+      92: checkcast     #359                // class net/minecraft/world/item/enchantment/Enchantment
+      95: getstatic     #361                // Field net/minecraft/world/item/enchantment/EnchantmentEffectComponents.POST_ATTACK:Lnet/minecraft/core/component/DataComponentType;
+      98: invokevirtual #366                // Method net/minecraft/world/item/enchantment/Enchantment.getEffects:(Lnet/minecraft/core/component/DataComponentType;)Ljava/util/List;
+     101: invokeinterface #370,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     106: astore        11
+     108: aload         11
+     110: invokeinterface #376,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     115: ifeq          159
+     118: aload         11
+     120: invokeinterface #381,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     125: checkcast     #384                // class net/minecraft/world/item/enchantment/TargetedConditionalEffect
+     128: astore        12
+     130: aload         12
+     132: invokevirtual #386                // Method net/minecraft/world/item/enchantment/TargetedConditionalEffect.effect:()Ljava/lang/Object;
+     135: astore        14
+     137: aload         14
+     139: instanceof    #389                // class net/minecraft/world/item/enchantment/effects/ExplodeEffect
+     142: ifeq          156
+     145: aload         14
+     147: checkcast     #389                // class net/minecraft/world/item/enchantment/effects/ExplodeEffect
+     150: astore        13
+     152: aload         13
+     154: astore        10
+     156: goto          108
+     159: aload         10
+     161: ifnonnull     165
+     164: return
+     165: aload         10
+     167: invokevirtual #391                // Method net/minecraft/world/item/enchantment/effects/ExplodeEffect.radius:()Lnet/minecraft/world/item/enchantment/LevelBasedValue;
+     170: iload         7
+     172: invokeinterface #395,  2          // InterfaceMethod net/minecraft/world/item/enchantment/LevelBasedValue.calculate:(I)F
+     177: fconst_0
+     178: invokestatic  #401                // Method java/lang/Math.max:(FF)F
+     181: fstore        11
+     183: ldc_w         #407                // float 4.0f
+     186: iload         7
+     188: i2f
+     189: fadd
+     190: fstore        12
+     192: aload         8
+     194: ifnonnull     201
+     197: aload_0
+     198: goto          203
+     201: aload         8
+     203: astore        13
+     205: new           #408                // class com/ratrod/archaion/entities/projectile/ThrownEchoMace$1
+     208: dup
+     209: aload_0
+     210: aload         10
+     212: invokevirtual #410                // Method net/minecraft/world/item/enchantment/effects/ExplodeEffect.blockInteraction:()Lnet/minecraft/world/level/Level$ExplosionInteraction;
+     215: getstatic     #414                // Field net/minecraft/world/level/Level$ExplosionInteraction.NONE:Lnet/minecraft/world/level/Level$ExplosionInteraction;
+     218: if_acmpeq     225
+     221: iconst_1
+     222: goto          226
+     225: iconst_0
+     226: aload         10
+     228: invokevirtual #420                // Method net/minecraft/world/item/enchantment/effects/ExplodeEffect.damageType:()Ljava/util/Optional;
+     231: invokevirtual #424                // Method java/util/Optional.isPresent:()Z
+     234: aload         10
+     236: invokevirtual #429                // Method net/minecraft/world/item/enchantment/effects/ExplodeEffect.knockbackMultiplier:()Ljava/util/Optional;
+     239: iload         7
+     241: invokedynamic #432,  0            // InvokeDynamic #0:apply:(I)Ljava/util/function/Function;
+     246: invokevirtual #436                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+     249: aload         10
+     251: invokevirtual #440                // Method net/minecraft/world/item/enchantment/effects/ExplodeEffect.immuneBlocks:()Ljava/util/Optional;
+     254: aload         8
+     256: fload         12
+     258: invokespecial #443                // Method com/ratrod/archaion/entities/projectile/ThrownEchoMace$1."<init>":(Lcom/ratrod/archaion/entities/projectile/ThrownEchoMace;ZZLjava/util/Optional;Ljava/util/Optional;Lnet/minecraft/world/entity/Entity;F)V
+     261: astore        14
+     263: aload_1
+     264: aload_0
+     265: aload_0
+     266: invokevirtual #130                // Method damageSources:()Lnet/minecraft/world/damagesource/DamageSources;
+     269: aload_0
+     270: aload         13
+     272: invokevirtual #134                // Method net/minecraft/world/damagesource/DamageSources.thrown:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/world/damagesource/DamageSource;
+     275: aload         14
+     277: aload         9
+     279: invokevirtual #446                // Method net/minecraft/world/phys/Vec3.x:()D
+     282: aload         9
+     284: invokevirtual #448                // Method net/minecraft/world/phys/Vec3.y:()D
+     287: aload         9
+     289: invokevirtual #451                // Method net/minecraft/world/phys/Vec3.z:()D
+     292: fload         11
+     294: aload         10
+     296: invokevirtual #453                // Method net/minecraft/world/item/enchantment/effects/ExplodeEffect.createFire:()Z
+     299: aload         10
+     301: invokevirtual #410                // Method net/minecraft/world/item/enchantment/effects/ExplodeEffect.blockInteraction:()Lnet/minecraft/world/level/Level$ExplosionInteraction;
+     304: aload         10
+     306: invokevirtual #456                // Method net/minecraft/world/item/enchantment/effects/ExplodeEffect.smallParticle:()Lnet/minecraft/core/particles/ParticleOptions;
+     309: aload         10
+     311: invokevirtual #460                // Method net/minecraft/world/item/enchantment/effects/ExplodeEffect.largeParticle:()Lnet/minecraft/core/particles/ParticleOptions;
+     314: aload         10
+     316: invokevirtual #463                // Method net/minecraft/world/item/enchantment/effects/ExplodeEffect.sound:()Lnet/minecraft/core/Holder;
+     319: invokevirtual #467                // Method net/minecraft/server/level/ServerLevel.explode:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/world/level/ExplosionDamageCalculator;DDDFZLnet/minecraft/world/level/Level$ExplosionInteraction;Lnet/minecraft/core/particles/ParticleOptions;Lnet/minecraft/core/particles/ParticleOptions;Lnet/minecraft/core/Holder;)Lnet/minecraft/world/level/Explosion;
+     322: pop
+     323: return
+
+  private static java.lang.Float lambda$applyWindBurst$0(int, net.minecraft.world.item.enchantment.LevelBasedValue);
+    Code:
+       0: aload_1
+       1: iload_0
+       2: invokeinterface #395,  2          // InterfaceMethod net/minecraft/world/item/enchantment/LevelBasedValue.calculate:(I)F
+       7: invokestatic  #471                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+      10: areturn
+
+  static {};
+    Code:
+       0: ldc           #8                  // class com/ratrod/archaion/entities/projectile/ThrownEchoMace
+       2: getstatic     #477                // Field net/minecraft/network/syncher/EntityDataSerializers.ITEM_STACK:Lnet/minecraft/network/syncher/EntityDataSerializer;
+       5: invokestatic  #483                // Method net/minecraft/network/syncher/SynchedEntityData.defineId:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+       8: putstatic     #52                 // Field DATA_MACE_STACK:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      11: return
+}

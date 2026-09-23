@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "tick_player": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "archaion:textures/block/reinforced_deepslate_bricks.png",
+    "description": {
+      "translate": "advancements.root.description"
+    },
+    "icon": {
+      "item": "archaion:reinforced_deepslate_bricks"
+    },
+    "title": {
+      "translate": "advancements.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "tick_player"
+    ]
+  ]
+}

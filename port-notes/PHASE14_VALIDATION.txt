@@ -1,0 +1,23 @@
+Phase 14 first-compiler-candidate validation
+============================================
+Active Java files: 110
+Phase 13 JSON / pack metadata baseline: 160 parsed, 0 errors
+Phase 13 Ancient Keep NBT baseline: 20 templates, 0 structural read errors
+Phase 13 local Archaion resource-reference baseline: 483 checked, 0 missing
+Phase 14 internal com.ratrod.archaion imports: 0 missing
+Known bad entities.ai.SleepingState import: 0 remaining
+Active NeoForge references: 0 (unchanged from Phase 13)
+Active Sponge/Mixin configuration/references: 0 (unchanged from Phase 13)
+TODO/FIXME/placeholder/UnsupportedOperationException markers in active Java/resources: 0
+Obvious post-Java-17 API usage scan: 0
+No-classpath Java syntax-level diagnostics: 0
+GitHub build workflow YAML: parsed successfully
+Local Forge MDK build bootstrap shell syntax: valid
+Forge build target: Minecraft 1.20.1 / Forge 47.4.20 / Java 17
+Official Forge 47.4.20 MDK SHA-1: ae89b7adec05802fb805c9345b509029c6952ebb
+
+Phase 14 compile blocker fixed:
+- LastOfDeepslateTooltipRenderer now imports SleepingState from com.ratrod.archaion.entities.SleepingState.
+
+Real ForgeGradle compile: NOT RUN in the sandbox because outbound HTTPS is blocked.
+The included GitHub Actions/local bootstrap is the next authoritative compiler step.

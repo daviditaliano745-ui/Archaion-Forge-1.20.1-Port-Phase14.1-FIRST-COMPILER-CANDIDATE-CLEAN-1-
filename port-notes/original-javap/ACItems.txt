@@ -1,0 +1,331 @@
+Compiled from "ACItems.java"
+public class com.ratrod.archaion.registry.ACItems {
+  public static final net.neoforged.neoforge.registries.DeferredRegister$Items ITEM;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> ECHO_KEY;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> BRAVE_ROD;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> BRAVE_ESSENCE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> IMPACT_PEARL;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> ECHO_CHARGE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> ECHO_MACE_UPGRADE_SMITHING_TEMPLATE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> ECHOS_GRACE_UPGRADE_SMITHING_TEMPLATE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<com.ratrod.archaion.item.EchoMaceItem> ECHO_MACE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<com.ratrod.archaion.item.EchosGraceItem> ECHOS_GRACE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> SLATED_SPAWN_EGG;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> WIGHT_SPAWN_EGG;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> BRAVE_SPAWN_EGG;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> DEEPSLATE_SENTINEL_SPAWN_EGG;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> GRIMORAY_SPAWN_EGG;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> HAUNTER_SPAWN_EGG;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public static final net.neoforged.neoforge.registries.DeferredItem<net.minecraft.world.item.Item> LAST_OF_DEEPSLATE_SPAWN_EGG;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredItem;
+
+  public com.ratrod.archaion.registry.ACItems();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static net.minecraft.world.item.Item lambda$static$13(net.minecraft.world.item.Item$Properties);
+    descriptor: (Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+    Code:
+       0: new           #7                  // class net/neoforged/neoforge/common/DeferredSpawnEggItem
+       3: dup
+       4: invokedynamic #9,  0              // InvokeDynamic #0:get:()Ljava/util/function/Supplier;
+       9: iconst_m1
+      10: iconst_m1
+      11: aload_0
+      12: invokespecial #13                 // Method net/neoforged/neoforge/common/DeferredSpawnEggItem."<init>":(Ljava/util/function/Supplier;IILnet/minecraft/world/item/Item$Properties;)V
+      15: areturn
+
+  private static net.minecraft.world.entity.EntityType lambda$static$12();
+    descriptor: ()Lnet/minecraft/world/entity/EntityType;
+    Code:
+       0: getstatic     #16                 // Field com/ratrod/archaion/registry/ACEntityTypes.LAST_OF_DEEPSLATE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       3: invokevirtual #22                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+       6: checkcast     #27                 // class net/minecraft/world/entity/EntityType
+       9: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$11(net.minecraft.world.item.Item$Properties);
+    descriptor: (Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+    Code:
+       0: new           #7                  // class net/neoforged/neoforge/common/DeferredSpawnEggItem
+       3: dup
+       4: invokedynamic #29,  0             // InvokeDynamic #1:get:()Ljava/util/function/Supplier;
+       9: iconst_m1
+      10: iconst_m1
+      11: aload_0
+      12: invokespecial #13                 // Method net/neoforged/neoforge/common/DeferredSpawnEggItem."<init>":(Ljava/util/function/Supplier;IILnet/minecraft/world/item/Item$Properties;)V
+      15: areturn
+
+  private static net.minecraft.world.entity.EntityType lambda$static$10();
+    descriptor: ()Lnet/minecraft/world/entity/EntityType;
+    Code:
+       0: getstatic     #30                 // Field com/ratrod/archaion/registry/ACEntityTypes.HAUNTER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       3: invokevirtual #22                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+       6: checkcast     #27                 // class net/minecraft/world/entity/EntityType
+       9: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$9(net.minecraft.world.item.Item$Properties);
+    descriptor: (Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+    Code:
+       0: new           #7                  // class net/neoforged/neoforge/common/DeferredSpawnEggItem
+       3: dup
+       4: invokedynamic #33,  0             // InvokeDynamic #2:get:()Ljava/util/function/Supplier;
+       9: iconst_m1
+      10: iconst_m1
+      11: aload_0
+      12: invokespecial #13                 // Method net/neoforged/neoforge/common/DeferredSpawnEggItem."<init>":(Ljava/util/function/Supplier;IILnet/minecraft/world/item/Item$Properties;)V
+      15: areturn
+
+  private static net.minecraft.world.entity.EntityType lambda$static$8();
+    descriptor: ()Lnet/minecraft/world/entity/EntityType;
+    Code:
+       0: getstatic     #34                 // Field com/ratrod/archaion/registry/ACEntityTypes.GRIMORAY:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       3: invokevirtual #22                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+       6: checkcast     #27                 // class net/minecraft/world/entity/EntityType
+       9: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$7(net.minecraft.world.item.Item$Properties);
+    descriptor: (Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+    Code:
+       0: new           #7                  // class net/neoforged/neoforge/common/DeferredSpawnEggItem
+       3: dup
+       4: invokedynamic #37,  0             // InvokeDynamic #3:get:()Ljava/util/function/Supplier;
+       9: iconst_m1
+      10: iconst_m1
+      11: aload_0
+      12: invokespecial #13                 // Method net/neoforged/neoforge/common/DeferredSpawnEggItem."<init>":(Ljava/util/function/Supplier;IILnet/minecraft/world/item/Item$Properties;)V
+      15: areturn
+
+  private static net.minecraft.world.entity.EntityType lambda$static$6();
+    descriptor: ()Lnet/minecraft/world/entity/EntityType;
+    Code:
+       0: getstatic     #38                 // Field com/ratrod/archaion/registry/ACEntityTypes.DEEPSLATE_SENTINEL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       3: invokevirtual #22                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+       6: checkcast     #27                 // class net/minecraft/world/entity/EntityType
+       9: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$5(net.minecraft.world.item.Item$Properties);
+    descriptor: (Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+    Code:
+       0: new           #7                  // class net/neoforged/neoforge/common/DeferredSpawnEggItem
+       3: dup
+       4: invokedynamic #41,  0             // InvokeDynamic #4:get:()Ljava/util/function/Supplier;
+       9: iconst_m1
+      10: iconst_m1
+      11: aload_0
+      12: invokespecial #13                 // Method net/neoforged/neoforge/common/DeferredSpawnEggItem."<init>":(Ljava/util/function/Supplier;IILnet/minecraft/world/item/Item$Properties;)V
+      15: areturn
+
+  private static net.minecraft.world.entity.EntityType lambda$static$4();
+    descriptor: ()Lnet/minecraft/world/entity/EntityType;
+    Code:
+       0: getstatic     #42                 // Field com/ratrod/archaion/registry/ACEntityTypes.BRAVE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       3: invokevirtual #22                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+       6: checkcast     #27                 // class net/minecraft/world/entity/EntityType
+       9: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$3(net.minecraft.world.item.Item$Properties);
+    descriptor: (Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+    Code:
+       0: new           #7                  // class net/neoforged/neoforge/common/DeferredSpawnEggItem
+       3: dup
+       4: invokedynamic #45,  0             // InvokeDynamic #5:get:()Ljava/util/function/Supplier;
+       9: iconst_m1
+      10: iconst_m1
+      11: aload_0
+      12: invokespecial #13                 // Method net/neoforged/neoforge/common/DeferredSpawnEggItem."<init>":(Ljava/util/function/Supplier;IILnet/minecraft/world/item/Item$Properties;)V
+      15: areturn
+
+  private static net.minecraft.world.entity.EntityType lambda$static$2();
+    descriptor: ()Lnet/minecraft/world/entity/EntityType;
+    Code:
+       0: getstatic     #46                 // Field com/ratrod/archaion/registry/ACEntityTypes.WIGHT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       3: invokevirtual #22                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+       6: checkcast     #27                 // class net/minecraft/world/entity/EntityType
+       9: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$1(net.minecraft.world.item.Item$Properties);
+    descriptor: (Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+    Code:
+       0: new           #7                  // class net/neoforged/neoforge/common/DeferredSpawnEggItem
+       3: dup
+       4: invokedynamic #49,  0             // InvokeDynamic #6:get:()Ljava/util/function/Supplier;
+       9: iconst_m1
+      10: iconst_m1
+      11: aload_0
+      12: invokespecial #13                 // Method net/neoforged/neoforge/common/DeferredSpawnEggItem."<init>":(Ljava/util/function/Supplier;IILnet/minecraft/world/item/Item$Properties;)V
+      15: areturn
+
+  private static net.minecraft.world.entity.EntityType lambda$static$0();
+    descriptor: ()Lnet/minecraft/world/entity/EntityType;
+    Code:
+       0: getstatic     #50                 // Field com/ratrod/archaion/registry/ACEntityTypes.SLATED:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       3: invokevirtual #22                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+       6: checkcast     #27                 // class net/minecraft/world/entity/EntityType
+       9: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: ldc           #55                 // String archaion
+       2: invokestatic  #57                 // Method net/neoforged/neoforge/registries/DeferredRegister.createItems:(Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+       5: putstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+       8: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+      11: ldc           #69                 // String echo_key
+      13: invokedynamic #71,  0             // InvokeDynamic #7:apply:()Ljava/util/function/Function;
+      18: invokevirtual #75                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;)Lnet/neoforged/neoforge/registries/DeferredItem;
+      21: putstatic     #81                 // Field ECHO_KEY:Lnet/neoforged/neoforge/registries/DeferredItem;
+      24: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+      27: ldc           #85                 // String brave_rod
+      29: invokedynamic #71,  0             // InvokeDynamic #7:apply:()Ljava/util/function/Function;
+      34: new           #87                 // class net/minecraft/world/item/Item$Properties
+      37: dup
+      38: invokespecial #89                 // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      41: invokevirtual #90                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/world/item/Item$Properties;)Lnet/neoforged/neoforge/registries/DeferredItem;
+      44: putstatic     #93                 // Field BRAVE_ROD:Lnet/neoforged/neoforge/registries/DeferredItem;
+      47: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+      50: ldc           #96                 // String brave_essence
+      52: invokedynamic #71,  0             // InvokeDynamic #7:apply:()Ljava/util/function/Function;
+      57: new           #87                 // class net/minecraft/world/item/Item$Properties
+      60: dup
+      61: invokespecial #89                 // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      64: invokevirtual #90                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/world/item/Item$Properties;)Lnet/neoforged/neoforge/registries/DeferredItem;
+      67: putstatic     #98                 // Field BRAVE_ESSENCE:Lnet/neoforged/neoforge/registries/DeferredItem;
+      70: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+      73: ldc           #101                // String impact_pearl
+      75: invokedynamic #103,  0            // InvokeDynamic #8:apply:()Ljava/util/function/Function;
+      80: new           #87                 // class net/minecraft/world/item/Item$Properties
+      83: dup
+      84: invokespecial #89                 // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      87: bipush        16
+      89: invokevirtual #104                // Method net/minecraft/world/item/Item$Properties.stacksTo:(I)Lnet/minecraft/world/item/Item$Properties;
+      92: invokevirtual #90                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/world/item/Item$Properties;)Lnet/neoforged/neoforge/registries/DeferredItem;
+      95: putstatic     #108                // Field IMPACT_PEARL:Lnet/neoforged/neoforge/registries/DeferredItem;
+      98: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     101: ldc           #111                // String echo_charge
+     103: invokedynamic #113,  0            // InvokeDynamic #9:apply:()Ljava/util/function/Function;
+     108: new           #87                 // class net/minecraft/world/item/Item$Properties
+     111: dup
+     112: invokespecial #89                 // Method net/minecraft/world/item/Item$Properties."<init>":()V
+     115: invokevirtual #90                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/world/item/Item$Properties;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     118: putstatic     #114                // Field ECHO_CHARGE:Lnet/neoforged/neoforge/registries/DeferredItem;
+     121: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     124: ldc           #117                // String echo_mace_upgrade_smithing_template
+     126: invokedynamic #119,  0            // InvokeDynamic #10:apply:()Ljava/util/function/Function;
+     131: new           #87                 // class net/minecraft/world/item/Item$Properties
+     134: dup
+     135: invokespecial #89                 // Method net/minecraft/world/item/Item$Properties."<init>":()V
+     138: getstatic     #120                // Field net/minecraft/world/item/Rarity.EPIC:Lnet/minecraft/world/item/Rarity;
+     141: invokevirtual #126                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+     144: invokevirtual #90                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/world/item/Item$Properties;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     147: putstatic     #130                // Field ECHO_MACE_UPGRADE_SMITHING_TEMPLATE:Lnet/neoforged/neoforge/registries/DeferredItem;
+     150: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     153: ldc           #133                // String echos_grace_upgrade_smithing_template
+     155: invokedynamic #135,  0            // InvokeDynamic #11:apply:()Ljava/util/function/Function;
+     160: new           #87                 // class net/minecraft/world/item/Item$Properties
+     163: dup
+     164: invokespecial #89                 // Method net/minecraft/world/item/Item$Properties."<init>":()V
+     167: getstatic     #120                // Field net/minecraft/world/item/Rarity.EPIC:Lnet/minecraft/world/item/Rarity;
+     170: invokevirtual #126                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+     173: invokevirtual #90                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/world/item/Item$Properties;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     176: putstatic     #136                // Field ECHOS_GRACE_UPGRADE_SMITHING_TEMPLATE:Lnet/neoforged/neoforge/registries/DeferredItem;
+     179: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     182: ldc           #139                // String echo_mace
+     184: invokedynamic #141,  0            // InvokeDynamic #12:apply:()Ljava/util/function/Function;
+     189: new           #87                 // class net/minecraft/world/item/Item$Properties
+     192: dup
+     193: invokespecial #89                 // Method net/minecraft/world/item/Item$Properties."<init>":()V
+     196: getstatic     #120                // Field net/minecraft/world/item/Rarity.EPIC:Lnet/minecraft/world/item/Rarity;
+     199: invokevirtual #126                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+     202: sipush        250
+     205: invokevirtual #142                // Method net/minecraft/world/item/Item$Properties.durability:(I)Lnet/minecraft/world/item/Item$Properties;
+     208: getstatic     #145                // Field net/minecraft/core/component/DataComponents.TOOL:Lnet/minecraft/core/component/DataComponentType;
+     211: invokestatic  #151                // Method net/minecraft/world/item/MaceItem.createToolProperties:()Lnet/minecraft/world/item/component/Tool;
+     214: invokevirtual #157                // Method net/minecraft/world/item/Item$Properties.component:(Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;)Lnet/minecraft/world/item/Item$Properties;
+     217: invokestatic  #161                // Method com/ratrod/archaion/item/EchoMaceItem.createAttributes:()Lnet/minecraft/world/item/component/ItemAttributeModifiers;
+     220: invokevirtual #167                // Method net/minecraft/world/item/Item$Properties.attributes:(Lnet/minecraft/world/item/component/ItemAttributeModifiers;)Lnet/minecraft/world/item/Item$Properties;
+     223: invokevirtual #90                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/world/item/Item$Properties;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     226: putstatic     #171                // Field ECHO_MACE:Lnet/neoforged/neoforge/registries/DeferredItem;
+     229: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     232: ldc           #174                // String echos_grace
+     234: invokedynamic #176,  0            // InvokeDynamic #13:apply:()Ljava/util/function/Function;
+     239: new           #87                 // class net/minecraft/world/item/Item$Properties
+     242: dup
+     243: invokespecial #89                 // Method net/minecraft/world/item/Item$Properties."<init>":()V
+     246: sipush        512
+     249: invokevirtual #142                // Method net/minecraft/world/item/Item$Properties.durability:(I)Lnet/minecraft/world/item/Item$Properties;
+     252: getstatic     #120                // Field net/minecraft/world/item/Rarity.EPIC:Lnet/minecraft/world/item/Rarity;
+     255: invokevirtual #126                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+     258: invokevirtual #90                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/world/item/Item$Properties;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     261: putstatic     #177                // Field ECHOS_GRACE:Lnet/neoforged/neoforge/registries/DeferredItem;
+     264: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     267: ldc           #180                // String slated_spawn_egg
+     269: invokedynamic #182,  0            // InvokeDynamic #14:apply:()Ljava/util/function/Function;
+     274: invokevirtual #75                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     277: putstatic     #183                // Field SLATED_SPAWN_EGG:Lnet/neoforged/neoforge/registries/DeferredItem;
+     280: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     283: ldc           #186                // String wight_spawn_egg
+     285: invokedynamic #188,  0            // InvokeDynamic #15:apply:()Ljava/util/function/Function;
+     290: invokevirtual #75                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     293: putstatic     #189                // Field WIGHT_SPAWN_EGG:Lnet/neoforged/neoforge/registries/DeferredItem;
+     296: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     299: ldc           #192                // String brave_spawn_egg
+     301: invokedynamic #194,  0            // InvokeDynamic #16:apply:()Ljava/util/function/Function;
+     306: invokevirtual #75                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     309: putstatic     #195                // Field BRAVE_SPAWN_EGG:Lnet/neoforged/neoforge/registries/DeferredItem;
+     312: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     315: ldc           #198                // String deepslate_sentinel_spawn_egg
+     317: invokedynamic #200,  0            // InvokeDynamic #17:apply:()Ljava/util/function/Function;
+     322: invokevirtual #75                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     325: putstatic     #201                // Field DEEPSLATE_SENTINEL_SPAWN_EGG:Lnet/neoforged/neoforge/registries/DeferredItem;
+     328: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     331: ldc           #204                // String grimoray_spawn_egg
+     333: invokedynamic #206,  0            // InvokeDynamic #18:apply:()Ljava/util/function/Function;
+     338: invokevirtual #75                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     341: putstatic     #207                // Field GRIMORAY_SPAWN_EGG:Lnet/neoforged/neoforge/registries/DeferredItem;
+     344: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     347: ldc           #210                // String haunter_spawn_egg
+     349: invokedynamic #212,  0            // InvokeDynamic #19:apply:()Ljava/util/function/Function;
+     354: invokevirtual #75                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     357: putstatic     #213                // Field HAUNTER_SPAWN_EGG:Lnet/neoforged/neoforge/registries/DeferredItem;
+     360: getstatic     #63                 // Field ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+     363: ldc           #216                // String last_of_deepslate_spawn_egg
+     365: invokedynamic #218,  0            // InvokeDynamic #20:apply:()Ljava/util/function/Function;
+     370: invokevirtual #75                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.registerItem:(Ljava/lang/String;Ljava/util/function/Function;)Lnet/neoforged/neoforge/registries/DeferredItem;
+     373: putstatic     #219                // Field LAST_OF_DEEPSLATE_SPAWN_EGG:Lnet/neoforged/neoforge/registries/DeferredItem;
+     376: return
+}

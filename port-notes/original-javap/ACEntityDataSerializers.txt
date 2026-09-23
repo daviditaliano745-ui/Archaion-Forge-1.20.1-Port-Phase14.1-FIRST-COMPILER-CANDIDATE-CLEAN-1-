@@ -1,0 +1,73 @@
+Compiled from "ACEntityDataSerializers.java"
+public class com.ratrod.archaion.registry.ACEntityDataSerializers {
+  public static final net.neoforged.neoforge.registries.DeferredRegister<net.minecraft.network.syncher.EntityDataSerializer<?>> ENTITY_DATA_SERIALIZERS;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredRegister;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.network.syncher.EntityDataSerializer<?>, net.minecraft.network.syncher.EntityDataSerializer<com.ratrod.archaion.entities.ai.SleepingState>> SLEEPING_STATE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.network.syncher.EntityDataSerializer<?>, net.minecraft.network.syncher.EntityDataSerializer<com.ratrod.archaion.entities.GrimorayType>> GRIMORAY_TYPE;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+
+  public com.ratrod.archaion.registry.ACEntityDataSerializers();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static net.minecraft.network.syncher.EntityDataSerializer lambda$static$3();
+    descriptor: ()Lnet/minecraft/network/syncher/EntityDataSerializer;
+    Code:
+       0: invokedynamic #7,  0              // InvokeDynamic #0:encode:()Lnet/minecraft/network/codec/StreamEncoder;
+       5: invokedynamic #11,  0             // InvokeDynamic #1:decode:()Lnet/minecraft/network/codec/StreamDecoder;
+      10: invokestatic  #15                 // InterfaceMethod net/minecraft/network/codec/StreamCodec.of:(Lnet/minecraft/network/codec/StreamEncoder;Lnet/minecraft/network/codec/StreamDecoder;)Lnet/minecraft/network/codec/StreamCodec;
+      13: invokestatic  #21                 // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.forValueType:(Lnet/minecraft/network/codec/StreamCodec;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+      16: areturn
+
+  private static com.ratrod.archaion.entities.GrimorayType lambda$static$2(net.minecraft.network.RegistryFriendlyByteBuf);
+    descriptor: (Lnet/minecraft/network/RegistryFriendlyByteBuf;)Lcom/ratrod/archaion/entities/GrimorayType;
+    Code:
+       0: aload_0
+       1: ldc           #27                 // class com/ratrod/archaion/entities/GrimorayType
+       3: invokevirtual #29                 // Method net/minecraft/network/RegistryFriendlyByteBuf.readEnum:(Ljava/lang/Class;)Ljava/lang/Enum;
+       6: checkcast     #27                 // class com/ratrod/archaion/entities/GrimorayType
+       9: areturn
+
+  private static net.minecraft.network.syncher.EntityDataSerializer lambda$static$1();
+    descriptor: ()Lnet/minecraft/network/syncher/EntityDataSerializer;
+    Code:
+       0: invokedynamic #35,  0             // InvokeDynamic #2:encode:()Lnet/minecraft/network/codec/StreamEncoder;
+       5: invokedynamic #36,  0             // InvokeDynamic #3:decode:()Lnet/minecraft/network/codec/StreamDecoder;
+      10: invokestatic  #15                 // InterfaceMethod net/minecraft/network/codec/StreamCodec.of:(Lnet/minecraft/network/codec/StreamEncoder;Lnet/minecraft/network/codec/StreamDecoder;)Lnet/minecraft/network/codec/StreamCodec;
+      13: invokestatic  #21                 // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.forValueType:(Lnet/minecraft/network/codec/StreamCodec;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+      16: areturn
+
+  private static com.ratrod.archaion.entities.ai.SleepingState lambda$static$0(net.minecraft.network.RegistryFriendlyByteBuf);
+    descriptor: (Lnet/minecraft/network/RegistryFriendlyByteBuf;)Lcom/ratrod/archaion/entities/ai/SleepingState;
+    Code:
+       0: aload_0
+       1: ldc           #37                 // class com/ratrod/archaion/entities/ai/SleepingState
+       3: invokevirtual #29                 // Method net/minecraft/network/RegistryFriendlyByteBuf.readEnum:(Ljava/lang/Class;)Ljava/lang/Enum;
+       6: checkcast     #37                 // class com/ratrod/archaion/entities/ai/SleepingState
+       9: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: getstatic     #39                 // Field net/neoforged/neoforge/registries/NeoForgeRegistries.ENTITY_DATA_SERIALIZERS:Lnet/minecraft/core/Registry;
+       3: ldc           #47                 // String archaion
+       5: invokestatic  #49                 // Method net/neoforged/neoforge/registries/DeferredRegister.create:(Lnet/minecraft/core/Registry;Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister;
+       8: putstatic     #55                 // Field ENTITY_DATA_SERIALIZERS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      11: getstatic     #55                 // Field ENTITY_DATA_SERIALIZERS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      14: ldc           #60                 // String sleeping_state
+      16: invokedynamic #62,  0             // InvokeDynamic #4:get:()Ljava/util/function/Supplier;
+      21: invokevirtual #66                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      24: putstatic     #70                 // Field SLEEPING_STATE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      27: getstatic     #55                 // Field ENTITY_DATA_SERIALIZERS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      30: ldc           #74                 // String grimoray_type
+      32: invokedynamic #76,  0             // InvokeDynamic #5:get:()Ljava/util/function/Supplier;
+      37: invokevirtual #66                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      40: putstatic     #77                 // Field GRIMORAY_TYPE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      43: return
+}

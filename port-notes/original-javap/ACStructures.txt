@@ -1,0 +1,30 @@
+Compiled from "ACStructures.java"
+public class com.ratrod.archaion.registry.ACStructures {
+  public static final net.minecraft.resources.ResourceKey<net.minecraft.world.level.levelgen.structure.Structure> ANCIENT_KEEP;
+    descriptor: Lnet/minecraft/resources/ResourceKey;
+
+  public static final net.minecraft.tags.TagKey<net.minecraft.world.level.levelgen.structure.Structure> ON_ANCIENT_KEEP_MAPS;
+    descriptor: Lnet/minecraft/tags/TagKey;
+
+  public com.ratrod.archaion.registry.ACStructures();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: getstatic     #7                  // Field net/minecraft/core/registries/Registries.STRUCTURE:Lnet/minecraft/resources/ResourceKey;
+       3: ldc           #13                 // String ancient_keep
+       5: invokestatic  #15                 // Method com/ratrod/archaion/Archaion.prefix:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+       8: invokestatic  #21                 // Method net/minecraft/resources/ResourceKey.create:(Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceKey;
+      11: putstatic     #27                 // Field ANCIENT_KEEP:Lnet/minecraft/resources/ResourceKey;
+      14: getstatic     #7                  // Field net/minecraft/core/registries/Registries.STRUCTURE:Lnet/minecraft/resources/ResourceKey;
+      17: ldc           #32                 // String on_ancient_keep_maps
+      19: invokestatic  #15                 // Method com/ratrod/archaion/Archaion.prefix:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      22: invokestatic  #34                 // Method net/minecraft/tags/TagKey.create:(Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;
+      25: putstatic     #39                 // Field ON_ANCIENT_KEEP_MAPS:Lnet/minecraft/tags/TagKey;
+      28: return
+}

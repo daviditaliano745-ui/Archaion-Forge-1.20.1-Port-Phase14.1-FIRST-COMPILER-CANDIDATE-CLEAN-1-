@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "archaion:block/reinforced_polished_deepslate"
+  }
+}

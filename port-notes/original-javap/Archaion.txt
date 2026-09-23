@@ -1,0 +1,72 @@
+Compiled from "Archaion.java"
+public class com.ratrod.archaion.Archaion {
+  public static final java.lang.String MODID;
+    descriptor: Ljava/lang/String;
+
+  public static final org.slf4j.Logger LOGGER;
+    descriptor: Lorg/slf4j/Logger;
+
+  public com.ratrod.archaion.Archaion(net.neoforged.bus.api.IEventBus, net.neoforged.fml.ModContainer);
+    descriptor: (Lnet/neoforged/bus/api/IEventBus;Lnet/neoforged/fml/ModContainer;)V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_1
+       5: invokedynamic #7,  0              // InvokeDynamic #0:accept:()Ljava/util/function/Consumer;
+      10: invokeinterface #11,  2           // InterfaceMethod net/neoforged/bus/api/IEventBus.addListener:(Ljava/util/function/Consumer;)V
+      15: getstatic     #17                 // Field com/ratrod/archaion/registry/ACBlocks.BLOCK:Lnet/neoforged/neoforge/registries/DeferredRegister$Blocks;
+      18: aload_1
+      19: invokevirtual #23                 // Method net/neoforged/neoforge/registries/DeferredRegister$Blocks.register:(Lnet/neoforged/bus/api/IEventBus;)V
+      22: getstatic     #29                 // Field com/ratrod/archaion/registry/ACItems.ITEM:Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+      25: aload_1
+      26: invokevirtual #35                 // Method net/neoforged/neoforge/registries/DeferredRegister$Items.register:(Lnet/neoforged/bus/api/IEventBus;)V
+      29: getstatic     #38                 // Field com/ratrod/archaion/registry/ACEffects.MOB_EFFECT:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      32: aload_1
+      33: invokevirtual #44                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Lnet/neoforged/bus/api/IEventBus;)V
+      36: getstatic     #47                 // Field com/ratrod/archaion/registry/ACSounds.SOUND_EVENT:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      39: aload_1
+      40: invokevirtual #44                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Lnet/neoforged/bus/api/IEventBus;)V
+      43: getstatic     #52                 // Field com/ratrod/archaion/registry/ACBlockEntities.BLOCK_ENTITIES:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      46: aload_1
+      47: invokevirtual #44                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Lnet/neoforged/bus/api/IEventBus;)V
+      50: getstatic     #57                 // Field com/ratrod/archaion/registry/ACEntityTypes.ENTITY_TYPE:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      53: aload_1
+      54: invokevirtual #44                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Lnet/neoforged/bus/api/IEventBus;)V
+      57: getstatic     #62                 // Field com/ratrod/archaion/registry/ACEntityDataSerializers.ENTITY_DATA_SERIALIZERS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      60: aload_1
+      61: invokevirtual #44                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Lnet/neoforged/bus/api/IEventBus;)V
+      64: getstatic     #67                 // Field com/ratrod/archaion/registry/ACCreativeModeTabs.CREATIVE_MODE_TABS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      67: aload_1
+      68: invokevirtual #44                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Lnet/neoforged/bus/api/IEventBus;)V
+      71: getstatic     #72                 // Field com/ratrod/archaion/registry/ACStructureTypes.STRUCTURE_TYPE:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      74: aload_1
+      75: invokevirtual #44                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Lnet/neoforged/bus/api/IEventBus;)V
+      78: getstatic     #77                 // Field com/ratrod/archaion/registry/ACStructurePlacements.STRUCTURE_PLACEMENT:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      81: aload_1
+      82: invokevirtual #44                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Lnet/neoforged/bus/api/IEventBus;)V
+      85: getstatic     #82                 // Field com/ratrod/archaion/registry/ACStructureProcessorTypes.STRUCTURE_PROCESSOR:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      88: aload_1
+      89: invokevirtual #44                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Lnet/neoforged/bus/api/IEventBus;)V
+      92: getstatic     #87                 // Field com/ratrod/archaion/registry/ACLootModifiers.GLOBAL_LOOT_MODIFIER_SERIALIZERS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      95: aload_1
+      96: invokevirtual #44                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Lnet/neoforged/bus/api/IEventBus;)V
+      99: invokestatic  #92                 // Method com/ratrod/archaion/registry/ACTrialVariants.initialize:()V
+     102: return
+
+  public static net.minecraft.resources.ResourceLocation prefix(java.lang.String);
+    descriptor: (Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+    Code:
+       0: ldc           #99                 // String archaion
+       2: aload_0
+       3: getstatic     #101                // Field java/util/Locale.ROOT:Ljava/util/Locale;
+       6: invokevirtual #107                // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+       9: invokestatic  #113                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      12: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: invokestatic  #119                // Method com/mojang/logging/LogUtils.getLogger:()Lorg/slf4j/Logger;
+       3: putstatic     #125                // Field LOGGER:Lorg/slf4j/Logger;
+       6: return
+}

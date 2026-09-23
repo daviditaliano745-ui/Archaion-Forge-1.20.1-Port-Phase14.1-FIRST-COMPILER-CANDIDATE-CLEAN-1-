@@ -1,0 +1,12 @@
+Phase 8 static validation summary
+=================================
+Active JSON files: 157 — parse errors: 0
+Converted Ancient Keep templates: 20 — NBT read errors: 0
+Template pool references: 27 (20 unique) — missing templates: 0
+Custom blocks referenced from Keep NBT: 22 — missing registrations: 0
+Custom entity/block-entity ids from Keep NBT: brave, deepslate_sentinel, grimoray, haunter, hologram, last_of_deepslate, slated, teleporter, trial_spawner, trial_vault, wight — unresolved: 0
+Java source files: 67
+DataVersion of converted templates: 3465
+Known zero-byte originals intentionally omitted: misc_room.nbt, misc_room_x.nbt
+Active 1.21/NeoForge token scan: clean for neoforge namespace/model data, dimension_padding, liquid_settings, encapsulate, DataComponents, CustomPacketPayload, StreamCodec
+Structure palette compatibility: Reinforced Grate WATERLOGGED property restored in Phase 8

@@ -1,0 +1,63 @@
+Compiled from "ACCommonSetup.java"
+public class com.ratrod.archaion.ACCommonSetup {
+  public com.ratrod.archaion.ACCommonSetup();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  static void onRegisterAttributes(net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent);
+    descriptor: (Lnet/neoforged/neoforge/event/entity/EntityAttributeCreationEvent;)V
+    Code:
+       0: aload_0
+       1: getstatic     #7                  // Field com/ratrod/archaion/registry/ACEntityTypes.LAST_OF_DEEPSLATE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       4: invokevirtual #13                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+       7: checkcast     #19                 // class net/minecraft/world/entity/EntityType
+      10: invokestatic  #21                 // Method com/ratrod/archaion/entities/LastOfDeepslate.createAttributes:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+      13: invokevirtual #27                 // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.build:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;
+      16: invokevirtual #33                 // Method net/neoforged/neoforge/event/entity/EntityAttributeCreationEvent.put:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;)V
+      19: aload_0
+      20: getstatic     #39                 // Field com/ratrod/archaion/registry/ACEntityTypes.BRAVE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      23: invokevirtual #13                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      26: checkcast     #19                 // class net/minecraft/world/entity/EntityType
+      29: invokestatic  #42                 // Method com/ratrod/archaion/entities/Brave.createAttributes:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+      32: invokevirtual #27                 // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.build:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;
+      35: invokevirtual #33                 // Method net/neoforged/neoforge/event/entity/EntityAttributeCreationEvent.put:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;)V
+      38: aload_0
+      39: getstatic     #45                 // Field com/ratrod/archaion/registry/ACEntityTypes.SLATED:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      42: invokevirtual #13                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      45: checkcast     #19                 // class net/minecraft/world/entity/EntityType
+      48: invokestatic  #48                 // Method com/ratrod/archaion/entities/Slated.createAttributes:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+      51: invokevirtual #27                 // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.build:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;
+      54: invokevirtual #33                 // Method net/neoforged/neoforge/event/entity/EntityAttributeCreationEvent.put:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;)V
+      57: aload_0
+      58: getstatic     #51                 // Field com/ratrod/archaion/registry/ACEntityTypes.WIGHT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      61: invokevirtual #13                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      64: checkcast     #19                 // class net/minecraft/world/entity/EntityType
+      67: invokestatic  #54                 // Method com/ratrod/archaion/entities/Wight.createAttributes:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+      70: invokevirtual #27                 // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.build:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;
+      73: invokevirtual #33                 // Method net/neoforged/neoforge/event/entity/EntityAttributeCreationEvent.put:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;)V
+      76: aload_0
+      77: getstatic     #57                 // Field com/ratrod/archaion/registry/ACEntityTypes.DEEPSLATE_SENTINEL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      80: invokevirtual #13                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      83: checkcast     #19                 // class net/minecraft/world/entity/EntityType
+      86: invokestatic  #60                 // Method com/ratrod/archaion/entities/DeepslateSentinel.createAttributes:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+      89: invokevirtual #27                 // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.build:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;
+      92: invokevirtual #33                 // Method net/neoforged/neoforge/event/entity/EntityAttributeCreationEvent.put:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;)V
+      95: aload_0
+      96: getstatic     #63                 // Field com/ratrod/archaion/registry/ACEntityTypes.GRIMORAY:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      99: invokevirtual #13                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     102: checkcast     #19                 // class net/minecraft/world/entity/EntityType
+     105: invokestatic  #66                 // Method com/ratrod/archaion/entities/Grimoray.createAttributes:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+     108: invokevirtual #27                 // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.build:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;
+     111: invokevirtual #33                 // Method net/neoforged/neoforge/event/entity/EntityAttributeCreationEvent.put:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;)V
+     114: aload_0
+     115: getstatic     #69                 // Field com/ratrod/archaion/registry/ACEntityTypes.HAUNTER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     118: invokevirtual #13                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     121: checkcast     #19                 // class net/minecraft/world/entity/EntityType
+     124: invokestatic  #72                 // Method com/ratrod/archaion/entities/Haunter.createAttributes:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+     127: invokevirtual #27                 // Method net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.build:()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;
+     130: invokevirtual #33                 // Method net/neoforged/neoforge/event/entity/EntityAttributeCreationEvent.put:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;)V
+     133: return
+}

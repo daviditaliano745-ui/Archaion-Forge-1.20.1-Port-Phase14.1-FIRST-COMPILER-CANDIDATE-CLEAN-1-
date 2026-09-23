@@ -1,0 +1,38 @@
+{
+  "parent": "archaion:enter_ancient_keep",
+  "criteria": {
+    "has_brave_rod": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "archaion:brave_rod"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.obtain_brave_rod.description"
+    },
+    "icon": {
+      "item": "archaion:brave_rod"
+    },
+    "title": {
+      "translate": "advancements.obtain_brave_rod.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_brave_rod"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "archaion:brave_essence"
+    ]
+  }
+}

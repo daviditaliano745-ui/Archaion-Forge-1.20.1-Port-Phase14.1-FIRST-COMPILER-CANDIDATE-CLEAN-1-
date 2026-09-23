@@ -1,0 +1,169 @@
+Compiled from "EchoMaceItem.java"
+public class com.ratrod.archaion.item.EchoMaceItem extends net.minecraft.world.item.MaceItem {
+  public com.ratrod.archaion.item.EchoMaceItem(net.minecraft.world.item.Item$Properties);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #1                  // Method net/minecraft/world/item/MaceItem."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+       5: return
+
+  public static net.minecraft.world.item.component.ItemAttributeModifiers createAttributes();
+    Code:
+       0: invokestatic  #7                  // Method net/minecraft/world/item/component/ItemAttributeModifiers.builder:()Lnet/minecraft/world/item/component/ItemAttributeModifiers$Builder;
+       3: getstatic     #13                 // Field net/minecraft/world/entity/ai/attributes/Attributes.ATTACK_DAMAGE:Lnet/minecraft/core/Holder;
+       6: new           #19                 // class net/minecraft/world/entity/ai/attributes/AttributeModifier
+       9: dup
+      10: getstatic     #21                 // Field net/minecraft/world/item/Item.BASE_ATTACK_DAMAGE_ID:Lnet/minecraft/resources/ResourceLocation;
+      13: ldc2_w        #27                 // double 7.0d
+      16: getstatic     #29                 // Field net/minecraft/world/entity/ai/attributes/AttributeModifier$Operation.ADD_VALUE:Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;
+      19: invokespecial #35                 // Method net/minecraft/world/entity/ai/attributes/AttributeModifier."<init>":(Lnet/minecraft/resources/ResourceLocation;DLnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;)V
+      22: getstatic     #38                 // Field net/minecraft/world/entity/EquipmentSlotGroup.MAINHAND:Lnet/minecraft/world/entity/EquipmentSlotGroup;
+      25: invokevirtual #44                 // Method net/minecraft/world/item/component/ItemAttributeModifiers$Builder.add:(Lnet/minecraft/core/Holder;Lnet/minecraft/world/entity/ai/attributes/AttributeModifier;Lnet/minecraft/world/entity/EquipmentSlotGroup;)Lnet/minecraft/world/item/component/ItemAttributeModifiers$Builder;
+      28: getstatic     #50                 // Field net/minecraft/world/entity/ai/attributes/Attributes.ATTACK_SPEED:Lnet/minecraft/core/Holder;
+      31: new           #19                 // class net/minecraft/world/entity/ai/attributes/AttributeModifier
+      34: dup
+      35: getstatic     #53                 // Field net/minecraft/world/item/Item.BASE_ATTACK_SPEED_ID:Lnet/minecraft/resources/ResourceLocation;
+      38: ldc2_w        #56                 // double -3.200000047683716d
+      41: getstatic     #29                 // Field net/minecraft/world/entity/ai/attributes/AttributeModifier$Operation.ADD_VALUE:Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;
+      44: invokespecial #35                 // Method net/minecraft/world/entity/ai/attributes/AttributeModifier."<init>":(Lnet/minecraft/resources/ResourceLocation;DLnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;)V
+      47: getstatic     #38                 // Field net/minecraft/world/entity/EquipmentSlotGroup.MAINHAND:Lnet/minecraft/world/entity/EquipmentSlotGroup;
+      50: invokevirtual #44                 // Method net/minecraft/world/item/component/ItemAttributeModifiers$Builder.add:(Lnet/minecraft/core/Holder;Lnet/minecraft/world/entity/ai/attributes/AttributeModifier;Lnet/minecraft/world/entity/EquipmentSlotGroup;)Lnet/minecraft/world/item/component/ItemAttributeModifiers$Builder;
+      53: invokevirtual #58                 // Method net/minecraft/world/item/component/ItemAttributeModifiers$Builder.build:()Lnet/minecraft/world/item/component/ItemAttributeModifiers;
+      56: areturn
+
+  public net.minecraft.world.item.UseAnim getUseAnimation(net.minecraft.world.item.ItemStack);
+    Code:
+       0: getstatic     #62                 // Field net/minecraft/world/item/UseAnim.SPEAR:Lnet/minecraft/world/item/UseAnim;
+       3: areturn
+
+  public int getUseDuration(net.minecraft.world.item.ItemStack, net.minecraft.world.entity.LivingEntity);
+    Code:
+       0: ldc           #68                 // int 72000
+       2: ireturn
+
+  public net.minecraft.world.InteractionResultHolder<net.minecraft.world.item.ItemStack> use(net.minecraft.world.level.Level, net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand);
+    Code:
+       0: aload_2
+       1: aload_3
+       2: invokevirtual #69                 // Method net/minecraft/world/entity/player/Player.getItemInHand:(Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/item/ItemStack;
+       5: astore        4
+       7: aload_2
+       8: invokevirtual #75                 // Method net/minecraft/world/entity/player/Player.isShiftKeyDown:()Z
+      11: ifeq          20
+      14: aload         4
+      16: invokestatic  #79                 // Method net/minecraft/world/InteractionResultHolder.fail:(Ljava/lang/Object;)Lnet/minecraft/world/InteractionResultHolder;
+      19: areturn
+      20: aload_2
+      21: aload_3
+      22: invokevirtual #85                 // Method net/minecraft/world/entity/player/Player.startUsingItem:(Lnet/minecraft/world/InteractionHand;)V
+      25: aload         4
+      27: invokestatic  #89                 // Method net/minecraft/world/InteractionResultHolder.consume:(Ljava/lang/Object;)Lnet/minecraft/world/InteractionResultHolder;
+      30: areturn
+
+  public void releaseUsing(net.minecraft.world.item.ItemStack, net.minecraft.world.level.Level, net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_3
+       1: instanceof    #70                 // class net/minecraft/world/entity/player/Player
+       4: ifeq          156
+       7: aload_3
+       8: checkcast     #70                 // class net/minecraft/world/entity/player/Player
+      11: astore        5
+      13: aload_0
+      14: aload_1
+      15: aload_3
+      16: invokevirtual #92                 // Method getUseDuration:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)I
+      19: iload         4
+      21: isub
+      22: istore        6
+      24: iload         6
+      26: iconst_5
+      27: if_icmpge     31
+      30: return
+      31: aload         5
+      33: getstatic     #98                 // Field net/minecraft/stats/Stats.ITEM_USED:Lnet/minecraft/stats/StatType;
+      36: aload_0
+      37: invokevirtual #104                // Method net/minecraft/stats/StatType.get:(Ljava/lang/Object;)Lnet/minecraft/stats/Stat;
+      40: invokevirtual #110                // Method net/minecraft/world/entity/player/Player.awardStat:(Lnet/minecraft/stats/Stat;)V
+      43: aload_2
+      44: instanceof    #114                // class net/minecraft/server/level/ServerLevel
+      47: ifeq          156
+      50: aload_2
+      51: checkcast     #114                // class net/minecraft/server/level/ServerLevel
+      54: astore        7
+      56: aload_1
+      57: iconst_1
+      58: aload         7
+      60: aload         5
+      62: invokedynamic #116,  0            // InvokeDynamic #0:accept:()Ljava/util/function/Consumer;
+      67: invokevirtual #120                // Method net/minecraft/world/item/ItemStack.hurtAndBreak:(ILnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Ljava/util/function/Consumer;)V
+      70: new           #126                // class com/ratrod/archaion/entities/projectile/ThrownEchoMace
+      73: dup
+      74: aload         7
+      76: aload         5
+      78: aload_1
+      79: iconst_1
+      80: invokevirtual #128                // Method net/minecraft/world/item/ItemStack.copyWithCount:(I)Lnet/minecraft/world/item/ItemStack;
+      83: invokespecial #132                // Method com/ratrod/archaion/entities/projectile/ThrownEchoMace."<init>":(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V
+      86: astore        8
+      88: aload         8
+      90: aload         5
+      92: invokevirtual #135                // Method com/ratrod/archaion/entities/projectile/ThrownEchoMace.setOwner:(Lnet/minecraft/world/entity/Entity;)V
+      95: aload         8
+      97: aload         5
+      99: aload         5
+     101: invokevirtual #139                // Method net/minecraft/world/entity/player/Player.getXRot:()F
+     104: aload         5
+     106: invokevirtual #143                // Method net/minecraft/world/entity/player/Player.getYRot:()F
+     109: fconst_0
+     110: ldc           #146                // float 2.5f
+     112: fconst_1
+     113: invokevirtual #147                // Method com/ratrod/archaion/entities/projectile/ThrownEchoMace.shootFromRotation:(Lnet/minecraft/world/entity/Entity;FFFFF)V
+     116: aload         7
+     118: aload         8
+     120: invokevirtual #151                // Method net/minecraft/server/level/ServerLevel.addFreshEntity:(Lnet/minecraft/world/entity/Entity;)Z
+     123: pop
+     124: aload_2
+     125: aconst_null
+     126: aload         8
+     128: getstatic     #155                // Field com/ratrod/archaion/registry/ACSounds.ECHO_MACE_THROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     131: invokevirtual #161                // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     134: checkcast     #166                // class net/minecraft/sounds/SoundEvent
+     137: getstatic     #168                // Field net/minecraft/sounds/SoundSource.PLAYERS:Lnet/minecraft/sounds/SoundSource;
+     140: fconst_1
+     141: fconst_1
+     142: invokevirtual #174                // Method net/minecraft/world/level/Level.playSound:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+     145: aload         5
+     147: invokevirtual #180                // Method net/minecraft/world/entity/player/Player.getCooldowns:()Lnet/minecraft/world/item/ItemCooldowns;
+     150: aload_0
+     151: bipush        30
+     153: invokevirtual #184                // Method net/minecraft/world/item/ItemCooldowns.addCooldown:(Lnet/minecraft/world/item/Item;I)V
+     156: return
+
+  public void appendHoverText(net.minecraft.world.item.ItemStack, net.minecraft.world.item.Item$TooltipContext, java.util.List<net.minecraft.network.chat.Component>, net.minecraft.world.item.TooltipFlag);
+    Code:
+       0: aload_3
+       1: ldc           #190                // String item.archaion.echo_mace.desc
+       3: iconst_1
+       4: anewarray     #192                // class java/lang/Object
+       7: dup
+       8: iconst_0
+       9: ldc           #194                // String item.archaion.echo_mace.keyword.echo_mace
+      11: invokestatic  #196                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      14: getstatic     #202                // Field net/minecraft/ChatFormatting.AQUA:Lnet/minecraft/ChatFormatting;
+      17: invokevirtual #208                // Method net/minecraft/network/chat/MutableComponent.withStyle:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      20: aastore
+      21: invokestatic  #214                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;
+      24: getstatic     #217                // Field net/minecraft/ChatFormatting.DARK_GRAY:Lnet/minecraft/ChatFormatting;
+      27: invokevirtual #208                // Method net/minecraft/network/chat/MutableComponent.withStyle:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      30: invokeinterface #220,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      35: pop
+      36: aload_3
+      37: getstatic     #225                // Field net/minecraft/network/chat/CommonComponents.EMPTY:Lnet/minecraft/network/chat/Component;
+      40: invokeinterface #220,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      45: pop
+      46: return
+
+  private static void lambda$releaseUsing$0(net.minecraft.world.item.Item);
+    Code:
+       0: return
+}

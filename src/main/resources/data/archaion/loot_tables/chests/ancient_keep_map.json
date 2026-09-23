@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "destination": "archaion:on_ancient_keep_maps",
+              "function": "minecraft:exploration_map",
+              "search_radius": 100,
+              "skip_existing_chunks": false,
+              "zoom": 4
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "misc.archaion.filled_map.ancient_keep"
+              }
+            }
+          ],
+          "name": "minecraft:map"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

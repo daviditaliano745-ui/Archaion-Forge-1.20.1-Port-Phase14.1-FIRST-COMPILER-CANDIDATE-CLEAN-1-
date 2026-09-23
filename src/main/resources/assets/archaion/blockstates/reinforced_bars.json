@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "below=false,facing=east": {
+      "model": "archaion:block/reinforced_bars",
+      "y": 90
+    },
+    "below=false,facing=north": {
+      "model": "archaion:block/reinforced_bars"
+    },
+    "below=false,facing=south": {
+      "model": "archaion:block/reinforced_bars",
+      "y": 180
+    },
+    "below=false,facing=west": {
+      "model": "archaion:block/reinforced_bars",
+      "y": 270
+    },
+    "below=true,facing=east": {
+      "model": "archaion:block/reinforced_bars_spiky",
+      "y": 90
+    },
+    "below=true,facing=north": {
+      "model": "archaion:block/reinforced_bars_spiky"
+    },
+    "below=true,facing=south": {
+      "model": "archaion:block/reinforced_bars_spiky",
+      "y": 180
+    },
+    "below=true,facing=west": {
+      "model": "archaion:block/reinforced_bars_spiky",
+      "y": 270
+    }
+  }
+}

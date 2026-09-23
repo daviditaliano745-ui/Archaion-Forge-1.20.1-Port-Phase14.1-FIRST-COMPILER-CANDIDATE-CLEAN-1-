@@ -1,0 +1,14 @@
+{
+  "type": "archaion:add_loot_table",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ancient_city"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.4
+    }
+  ],
+  "loot_table": "archaion:chests/ancient_keep_map"
+}

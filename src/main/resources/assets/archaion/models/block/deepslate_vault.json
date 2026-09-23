@@ -1,0 +1,14 @@
+{
+  "parent": "archaion:block/template_glowing_vault",
+  "textures": {
+    "bottom": "archaion:block/deepslate_vault_bottom",
+    "bottom_glow": "archaion:block/empty",
+    "front": "archaion:block/deepslate_vault_front_off",
+    "front_glow": "archaion:block/empty",
+    "side": "archaion:block/deepslate_vault_side_off",
+    "side_glow": "archaion:block/empty",
+    "top": "archaion:block/deepslate_vault_top",
+    "top_glow": "archaion:block/empty"
+  },
+  "render_type": "cutout"
+}

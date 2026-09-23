@@ -1,0 +1,10 @@
+{
+  "converted_structure_templates": 20,
+  "skipped_zero_byte_templates": [
+    "misc_room.nbt",
+    "misc_room_x.nbt"
+  ],
+  "data_version": 3465,
+  "worldgen_structure_type": "archaion:ancient_keep (custom 1.20.1 jigsaw wrapper; depth 15 preserved)",
+  "structure_placement": "minecraft:random_spread"
+}

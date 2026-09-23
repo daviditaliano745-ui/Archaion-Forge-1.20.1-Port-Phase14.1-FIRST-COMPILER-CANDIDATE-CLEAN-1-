@@ -1,0 +1,29 @@
+{
+  "parent": "archaion:root",
+  "criteria": {
+    "get_map": {
+      "conditions": {
+        "loot_table": "archaion:chests/ancient_keep_map"
+      },
+      "trigger": "minecraft:player_generates_container_loot"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.obtain_map.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:filled_map"
+    },
+    "title": {
+      "translate": "advancements.obtain_map.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_map"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

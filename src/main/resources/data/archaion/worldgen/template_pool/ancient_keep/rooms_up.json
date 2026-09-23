@@ -1,0 +1,15 @@
+{
+  "name": "archaion:ancient_keep",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "archaion:ancient_keep/room_up",
+        "processors": "archaion:ancient_keep/ancient_keep_decay",
+        "projection": "rigid"
+      }
+    }
+  ]
+}

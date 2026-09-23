@@ -1,0 +1,61 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "#side"
+  },
+  "elements": [
+    {
+      "name": "cage",
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#front", "cullface": "north"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "east"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "south"},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "west"},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "up"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+      }
+    },
+    {
+      "name": "cage_inverted_faces",
+      "from": [15.998, 3.002, 0.002],
+      "to": [0.002, 15.998, 15.998],
+      "faces": {
+        "north": {"uv": [16, 0, 0, 13], "texture": "#front"},
+        "east": {"uv": [16, 0, 0, 13], "texture": "#side"},
+        "south": {"uv": [16, 0, 0, 13], "texture": "#side"},
+        "west": {"uv": [16, 0, 0, 13], "texture": "#side"},
+        "up": {"uv": [16, 0, 0, 16], "texture": "#top"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+      }
+    },
+    {
+      "name": "cage_glow",
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#front_glow", "cullface": "north", "forge_data": {"block_light": 15, "sky_light": 15}},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#side_glow", "cullface": "east", "forge_data": {"block_light": 15, "sky_light": 15}},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#side_glow", "cullface": "south", "forge_data": {"block_light": 15, "sky_light": 15}},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#side_glow", "cullface": "west", "forge_data": {"block_light": 15, "sky_light": 15}},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#top_glow", "cullface": "up", "forge_data": {"block_light": 15, "sky_light": 15}},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#bottom_glow", "cullface": "down", "forge_data": {"block_light": 15, "sky_light": 15}}
+      }
+    },
+    {
+      "name": "cage_inverted_faces_glow",
+      "from": [15.998, 3.002, 0.002],
+      "to": [0.002, 15.998, 15.998],
+      "faces": {
+        "north": {"uv": [16, 0, 0, 13], "texture": "#front_glow", "forge_data": {"block_light": 15, "sky_light": 15}},
+        "east": {"uv": [16, 0, 0, 13], "texture": "#side_glow", "forge_data": {"block_light": 15, "sky_light": 15}},
+        "south": {"uv": [16, 0, 0, 13], "texture": "#side_glow", "forge_data": {"block_light": 15, "sky_light": 15}},
+        "west": {"uv": [16, 0, 0, 13], "texture": "#side_glow", "forge_data": {"block_light": 15, "sky_light": 15}},
+        "up": {"uv": [16, 0, 0, 16], "texture": "#top_glow", "forge_data": {"block_light": 15, "sky_light": 15}},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#bottom_glow", "forge_data": {"block_light": 15, "sky_light": 15}}
+      }
+    }
+  ],
+  "render_type": "cutout"
+}

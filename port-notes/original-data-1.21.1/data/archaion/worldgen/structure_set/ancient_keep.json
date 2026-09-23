@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "archaion:ancient_keep",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 453678698,
+    "spacing": 48,
+    "separation": 24,
+    "spread_type": "linear",
+    "type": "archaion:avoid_trial_chambers",
+    "trial_chambers_min_distance": 16
+  }
+}
